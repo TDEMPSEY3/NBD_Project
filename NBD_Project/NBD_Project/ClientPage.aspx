@@ -44,7 +44,7 @@
             </div>
             <p>&nbsp;</p>
         </div>
-        Search for Bid<br />
+        Search for Client<br />
         <br />
         <div>
             Name:&nbsp;&nbsp;&nbsp;
