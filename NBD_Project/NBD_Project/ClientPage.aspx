@@ -75,7 +75,7 @@
             <br />
         </div>
         <div>
-            <p>Results go here</p>
+            <p>Results</p>
         </div>
     </form>
 </body>
