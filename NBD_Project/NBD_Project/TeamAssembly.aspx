@@ -44,6 +44,14 @@
             </div>
             <p>&nbsp;</p>
         </div>
+        <div id ="welcome">
+            <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
+        &nbsp;<br />
+            <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+            <br />
+            <br />
+            <br />
+        </div>
         <asp:Label ID="Label1" runat="server" Text="TEAM ASSEMBLY PAGE UNDER CONSTRUCTION"></asp:Label>
     </form>
 </body>

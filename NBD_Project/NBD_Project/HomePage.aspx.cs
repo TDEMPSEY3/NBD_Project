@@ -15,7 +15,7 @@ namespace NBD_Project
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
             else
-                lblWelcome.Text += "";
+                lblWelcome.Text += " " + User.Identity.Name;
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)

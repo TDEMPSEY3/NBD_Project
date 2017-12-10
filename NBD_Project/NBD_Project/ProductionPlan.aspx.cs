@@ -14,6 +14,17 @@ namespace NBD_Project
             //make sure user is logged into the system
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
+            else
+                lblWelcome.Text += " " + User.Identity.Name;
+        }
+
+        protected void btnLogout_Click(object sender, EventArgs e)
+        {
+            var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
+
+            authenticationManager.SignOut();
+
+            Response.Redirect("~/Login.aspx");
         }
     }
 }
