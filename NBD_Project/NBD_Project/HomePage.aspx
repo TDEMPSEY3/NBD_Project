@@ -9,6 +9,9 @@
         #NavMenu {
             width: 250px;
         }
+        .auto-style1 {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>
@@ -43,12 +46,14 @@
                 <asp:HyperLink ID="PAdminReportLink" runat="server" href="ProjectAdminReport.aspx">Project Administrator Report</asp:HyperLink>
             </div>
             <p>&nbsp;</p>
-        </div>
-        <div style="height: 84px">   
+       
+            </div>
+        <div id="hp">
+        <div style="height: 24px">   
             <table style="width:100%;">
                 <tr>
                     <td>
-                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
+                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                     </td>
                     <td style="text-align: right">
                         <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
@@ -57,15 +62,41 @@
             </table>
     
             <br />
-        </div>
-        <div>
-             Current Projects
+        </div><br /><br />
+        
+        <div style="height: 172px"><strong><em>Announcements<br />
+            </em></strong><br />Client #2356 has requested a meeting for rescheduling and readjusting for project #456987<br />
+            <br />
+            Please be sure to contribute to Hunger Awareness by donating non-perishable goods. Let&#39;s save lives together as NBD<br />
+            <br /><br />
+            Due to a mishap in the greenhouse, there are a few flowers and shrubs that will not be available until next month. <asp:HyperLink ID="HyperLink1" runat="server" href="">Click here</asp:HyperLink>&nbsp; to view the affected plants. Regards, Ben.<br /><br />
+            
+            </div><br /><br />
+            <div style="height: 153px">
+                <strong><em>Current Projects
+        </em>
+                <br />
+                <span class="auto-style1">Project</span></strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="auto-style1"><strong>Status</strong></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+                <br />
+                Project #456739&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>&nbsp;In Progress</em><br />
+                <br />
+                Project #456987&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>&nbsp;In Progress</em><br />
+                <br />
+                Project #456873&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Initializing </em>
         </div>
             
-        <div>Recent Pending Approvals</div>
-        <p>&nbsp;</p>
+        </div><br /><br />
+            
+        <div style="height: 114px; margin-top: 0px;"><strong><em>Recent Pending Approvals</em></strong><br />
+            <asp:LinkButton ID="LinkButton1" runat="server">View</asp:LinkButton>
+&nbsp;&nbsp; Design Bid #4256789<br />
+            <br />
+            <asp:LinkButton ID="LinkButton2" runat="server">View</asp:LinkButton>
+&nbsp;&nbsp; Design Budget #5679834<br />
+            <br />
+            <asp:LinkButton ID="LinkButton3" runat="server">View</asp:LinkButton>
+&nbsp;&nbsp; Design Budget #674356</div>
     </form>
-    <p>
-        &nbsp;</p>
-</body>
+        </body>
 </html>
