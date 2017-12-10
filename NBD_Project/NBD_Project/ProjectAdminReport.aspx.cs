@@ -11,7 +11,9 @@ namespace NBD_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            //make sure user is logged into the system
+            if (!User.Identity.IsAuthenticated)
+                Response.Redirect("~/LogIn.aspx");
         }
     }
 }
