@@ -44,7 +44,7 @@
             </div>
             <p>&nbsp;</p>
         </div>
-        <div style="height: 126px">   
+        <div style="height: 84px">   
             <table style="width:100%;">
                 <tr>
                     <td>
@@ -57,12 +57,15 @@
             </table>
     
             <br />
-            <asp:Panel ID="Panel1" runat="server">
-            </asp:Panel>
-            <asp:Panel ID="pnlContent" runat="server" Visible="True">
-                <br />
-                Content.....</asp:Panel>   
         </div>
+        <div>
+             Current Projects
+        </div>
+            
+        <div>Recent Pending Approvals</div>
+        <p>&nbsp;</p>
     </form>
+    <p>
+        &nbsp;</p>
 </body>
 </html>
