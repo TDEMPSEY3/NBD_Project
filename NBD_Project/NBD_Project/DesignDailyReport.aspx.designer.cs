@@ -10,7 +10,7 @@
 namespace NBD_Project {
     
     
-    public partial class ProductionPlan {
+    public partial class DailyDesignerReport {
         
         /// <summary>
         /// form1 control.
@@ -157,12 +157,12 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.Button btnLogout;
         
         /// <summary>
-        /// Label1 control.
+        /// lblddr control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblddr;
     }
 }

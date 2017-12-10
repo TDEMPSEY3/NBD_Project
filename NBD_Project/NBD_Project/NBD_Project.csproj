@@ -117,14 +117,17 @@
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
     <Content Include="ClientInfo.aspx" />
+    <Content Include="DesignDailyReport.aspx" />
     <Content Include="DesignBid.aspx" />
     <Content Include="DesignBudget.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PendingApprovals.aspx" />
+    <Content Include="ProductionDailyReport.aspx" />
     <Content Include="ProductionPlan.aspx" />
     <Content Include="ProjectAdminReport.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ClientPage.aspx" />
+    <Content Include="ReportPage.aspx" />
     <Content Include="TeamAssembly.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -145,6 +148,13 @@
     </Compile>
     <Compile Include="ClientInfo.aspx.designer.cs">
       <DependentUpon>ClientInfo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignDailyReport.aspx.cs">
+      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignDailyReport.aspx.designer.cs">
+      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="DesignBid.aspx.cs">
       <DependentUpon>DesignBid.aspx</DependentUpon>
@@ -174,6 +184,13 @@
     <Compile Include="PendingApprovals.aspx.designer.cs">
       <DependentUpon>PendingApprovals.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ProductionDailyReport.aspx.cs">
+      <DependentUpon>ProductionDailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProductionDailyReport.aspx.designer.cs">
+      <DependentUpon>ProductionDailyReport.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ProductionPlan.aspx.cs">
       <DependentUpon>ProductionPlan.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -202,6 +219,13 @@
     </Compile>
     <Compile Include="ClientPage.aspx.designer.cs">
       <DependentUpon>ClientPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ReportPage.aspx.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ReportPage.aspx.designer.cs">
+      <DependentUpon>ReportPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
     <Compile Include="TeamAssembly.aspx.cs">
