@@ -112,6 +112,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Administrator.aspx" />
+    <Content Include="App_Data\Users.mdf" />
+    <Content Include="App_Data\Users_log.ldf">
+      <DependentUpon>Users.mdf</DependentUpon>
+    </Content>
     <Content Include="ClientInfo.aspx" />
     <Content Include="DesignBid.aspx" />
     <Content Include="DesignBudget.aspx" />
@@ -122,7 +126,9 @@
     <Content Include="Registration.aspx" />
     <Content Include="ClientPage.aspx" />
     <Content Include="TeamAssembly.aspx" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="HomePage.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -213,9 +219,7 @@
       <DependentUpon>HomePage.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
