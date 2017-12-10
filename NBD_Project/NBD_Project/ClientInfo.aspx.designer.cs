@@ -76,6 +76,33 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.HyperLink PPlanLink;
         
         /// <summary>
+        /// ReportLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink ReportLink;
+        
+        /// <summary>
+        /// DDReportLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink DDReportLink;
+        
+        /// <summary>
+        /// PDReportLink control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.HyperLink PDReportLink;
+        
+        /// <summary>
         /// AdminLink control.
         /// </summary>
         /// <remarks>

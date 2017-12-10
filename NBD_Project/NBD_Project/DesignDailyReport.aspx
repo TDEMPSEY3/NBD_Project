@@ -1,19 +1,14 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="ProductionPlan.aspx.cs" Inherits="NBD_Project.ProductionPlan" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="DesignDailyReport.aspx.cs" Inherits="NBD_Project.DailyDesignerReport" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-        <style type="text/css">
-        #NavMenu {
-            width: 250px;
-        }
-    </style>
 </head>
 <body>
     <form id="form1" runat="server">
-       <div id="NavMenu">
+          <div id="NavMenu">
             <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
             <p>
                 <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx">Client</asp:HyperLink>
@@ -33,14 +28,15 @@
             <p>            
                 <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx">Report</asp:HyperLink>
             </p>
-           <div style="margin-left: 40px">
+           
+            <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
                 </div>
-            
-             <div style="margin-left: 40px">
+                        
+            <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
                     </p>
@@ -67,8 +63,8 @@
             <br />
             <br />
             <br />
+            <asp:Label ID="lblddr" runat="server" Text="DESIGN DAILY REPORT PAGE UNDER CONSTRUCTION"></asp:Label>
         </div>
-        <asp:Label ID="Label1" runat="server" Text="PRODUCTION PLAN PAGE UNDER CONSTRUCTION"></asp:Label>
     </form>
 </body>
 </html>

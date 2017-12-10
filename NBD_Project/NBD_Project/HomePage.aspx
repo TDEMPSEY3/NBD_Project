@@ -33,6 +33,20 @@
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx">Production Plan</asp:HyperLink>
             </div>
+            <p>            
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx">Report</asp:HyperLink>
+            </p>
+           <div style="margin-left: 40px">
+                <p>
+                <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
+                <br />
+                </p>
+                </div>            
+             <div style="margin-left: 40px">
+                <p>
+                <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
+                    </p>
+            </div>
             <p>
                 <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
             </p>
@@ -64,12 +78,11 @@
             <br />
         </div><br /><br />
         
-        <div style="height: 172px"><strong><em>Announcements<br />
+        <div style="height: 191px"><strong><em>Announcements<br />
             </em></strong><br />Client #2356 has requested a meeting for rescheduling and readjusting for project #456987<br />
             <br />
             Please be sure to contribute to Hunger Awareness by donating non-perishable goods. Let&#39;s save lives together as NBD<br />
-            <br /><br />
-            Due to a mishap in the greenhouse, there are a few flowers and shrubs that will not be available until next month. <asp:HyperLink ID="HyperLink1" runat="server" href="">Click here</asp:HyperLink>&nbsp; to view the affected plants. Regards, Ben.<br /><br />
+            <br />Due to a mishap in the greenhouse, there are a few flowers and shrubs that will not be available until next month. <asp:HyperLink ID="HyperLink1" runat="server" href="">Click here</asp:HyperLink>&nbsp; to view the affected plants. Regards, Ben.<br /><br />
             
             </div><br /><br />
             <div style="height: 153px">
