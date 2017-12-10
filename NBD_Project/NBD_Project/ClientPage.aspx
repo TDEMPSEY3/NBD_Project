@@ -44,6 +44,14 @@
             </div>
             <p>&nbsp;</p>
         </div>
+        <div id ="welcome">
+            <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
+        &nbsp;<br />
+            <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+            <br />
+            <br />
+            <br />
+        </div>
         Search for Client<br />
         <br />
         <div>
@@ -70,6 +78,8 @@
 &nbsp; and&nbsp;
             <asp:TextBox ID="txtDateEnd" runat="server"></asp:TextBox>
             <br />
+            <br />
+            <asp:Button ID="btnSearch" runat="server" Text="Search" />
             <br />
             <br />
             <br />
