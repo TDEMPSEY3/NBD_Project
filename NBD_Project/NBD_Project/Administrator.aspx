@@ -64,8 +64,9 @@
             <p>&nbsp;</p>
         </div>
         <div id ="welcome">
+            <strong>
             <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
-        &nbsp;<br />
+            </strong>&nbsp;<br />
             <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
             <br />
             <br />
