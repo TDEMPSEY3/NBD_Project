@@ -40,7 +40,7 @@
         <asp:Button ID="btnRegister" runat="server" CausesValidation="False" Text="Register" OnClick="btnRegister_Click" />
         <br />
         <br />
-        <asp:Label ID="lblMessage" runat="server"></asp:Label>
+        <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
         <br />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUser" ErrorMessage="Username is required" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />

@@ -44,7 +44,7 @@
         <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
         <br />
         <br />
-        <asp:Label ID="lblMessage" runat="server"></asp:Label>
+        <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
         <br />
         <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txtPass" ControlToValidate="txtConfirm" ErrorMessage="Password does not match" SetFocusOnError="True" ForeColor="Red"></asp:CompareValidator>
         <br />
