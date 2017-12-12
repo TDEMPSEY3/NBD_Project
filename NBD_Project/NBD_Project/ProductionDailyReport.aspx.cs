@@ -27,5 +27,21 @@ namespace NBD_Project
             Response.Redirect("~/Login.aspx");
 
         }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            MaterialPanel.Visible = false;
+            LaborPanel.Visible = false;
+            if (DropDownList1.SelectedIndex==1)
+            {
+                MaterialPanel.Visible = true;
+            }
+            if(DropDownList1.SelectedIndex==2)
+            {
+                LaborPanel.Visible = true;
+            }
+        }
+
+        
     }
 }
