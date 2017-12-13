@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace NBD_Project
 {
-    public partial class ProjectAdminReport : System.Web.UI.Page
+    public partial class DesignResultPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            //make sure user is logged into the system
-            if (!User.Identity.IsAuthenticated)
-                Response.Redirect("~/LogIn.aspx");
-            else
-                lblWelcome.Text += " " + User.Identity.Name;
+
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -27,9 +23,9 @@ namespace NBD_Project
             Response.Redirect("~/Login.aspx");
         }
 
-        protected void btnCreate_Click(object sender, EventArgs e)
+        protected void btnOk_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/ProjectAdminReportResult.aspx");
+            Response.Redirect("~/HomePage.aspx");
         }
     }
 }

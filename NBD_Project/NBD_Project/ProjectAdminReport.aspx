@@ -9,6 +9,23 @@
         #NavMenu {
             width: 250px;
         }
+            .auto-style1 {
+                width: 731px;
+            }
+            .auto-style3 {
+                width: 243px;
+            }
+            .auto-style4 {
+                width: 107px;
+            }
+            .auto-style5 {
+                text-decoration: underline;
+                font-size: x-large;
+            }
+            .auto-style6 {
+                width: 243px;
+                text-align: right;
+            }
     </style>
 </head>
 <body>
@@ -68,7 +85,34 @@
             <br />
             <br />
         </div>
-        <asp:Label ID="Label1" runat="server" Text="PROJECT ADMINSITRATION REPORT PAGE UNDER CONSTRUCTION"></asp:Label>
+        <div>
+
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style5" colspan="3"><strong>Create new Project Administrator Report</strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>Date: </strong></td>
+                    <td class="auto-style3">
+                        <asp:TextBox ID="txtDate" runat="server" Width="140px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style3">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style6">
+                        <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="100px" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
     </form>
 </body>
 </html>
