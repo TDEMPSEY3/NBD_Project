@@ -28,20 +28,7 @@ namespace NBD_Project
 
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            MaterialPanel.Visible = false;
-            LaborPanel.Visible = false;
-            if (DropDownList1.SelectedIndex==1)
-            {
-                MaterialPanel.Visible = true;
-            }
-            if(DropDownList1.SelectedIndex==2)
-            {
-                LaborPanel.Visible = true;
-            }
-        }
-
+       
         protected void btnExit_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/HomePage.aspx");
@@ -50,6 +37,16 @@ namespace NBD_Project
         protected void btnSave_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/PDRResults.aspx");
+        }
+
+        protected void BtnAdd_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProductionDailyReportPage.aspx");
+        }
+
+        protected void BtnAdd2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProductionDailyReportPage.aspx");
         }
     }
 }
