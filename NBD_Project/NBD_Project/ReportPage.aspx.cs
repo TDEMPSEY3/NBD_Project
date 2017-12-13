@@ -27,5 +27,10 @@ namespace NBD_Project
             Response.Redirect("~/Login.aspx");
 
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ReportPage.aspx");
+        }
     }
 }

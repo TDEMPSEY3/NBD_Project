@@ -10,7 +10,7 @@
 namespace NBD_Project {
     
     
-    public partial class ProjectAdminReport {
+    public partial class ProjectAdminReportResult {
         
         /// <summary>
         /// form1 control.
@@ -157,21 +157,21 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.Button btnLogout;
         
         /// <summary>
-        /// txtDate control.
+        /// lblReportDate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDate;
+        protected global::System.Web.UI.WebControls.Label lblReportDate;
         
         /// <summary>
-        /// btnCreate control.
+        /// btnDone control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCreate;
+        protected global::System.Web.UI.WebControls.Button btnDone;
     }
 }
