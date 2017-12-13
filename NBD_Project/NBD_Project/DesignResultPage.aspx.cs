@@ -22,5 +22,10 @@ namespace NBD_Project
 
             Response.Redirect("~/Login.aspx");
         }
+
+        protected void btnOk_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/HomePage.aspx");
+        }
     }
 }

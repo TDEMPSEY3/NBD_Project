@@ -65,10 +65,6 @@
                 <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
-                <p>
-                <asp:HyperLink ID="DRPage" runat="server" href="DesignResultPage.aspx">Design Result Page</asp:HyperLink>
-                <br />
-                </p>
                 </div>
                         
             <div style="margin-left: 40px">
@@ -196,7 +192,7 @@
                     <td class="auto-style55">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Designer Name&nbsp;</td>
                 </tr>
             </table>
-            <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" />
+            <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" OnClick="Button2_Click" />
           </div>
     </form>
 </body>

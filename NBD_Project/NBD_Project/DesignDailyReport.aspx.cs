@@ -28,5 +28,10 @@ namespace NBD_Project
                 Response.Redirect("~/Login.aspx");
             
         }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/DesignResultPage.aspx");
+        }
     }
 }

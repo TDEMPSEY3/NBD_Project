@@ -129,10 +129,6 @@
                 <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
-                <p>
-                <asp:HyperLink ID="DRPage" runat="server" href="DesignResultPage.aspx">Design Result Page</asp:HyperLink>
-                <br />
-                </p>
                 </div>
                         
             <div style="margin-left: 40px">
@@ -225,8 +221,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style9">
-                        <asp:Button ID="Button1" runat="server" Text="+" />
-                    </td>
+                        &nbsp;</td>
                     <td class="auto-style12">Fremont</td>
                     <td class="auto-style13">B</td>
                     <td class="auto-style11">3</td>
@@ -254,6 +249,8 @@
                     <td class="auto-style17">Designer Name&nbsp;</td>
                 </tr>
             </table>
+            <br />
+            <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="text-align: center" Text="Ok" Width="100px" />
           </div>
           </div>
     </form>
