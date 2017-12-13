@@ -50,6 +50,9 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Gat.Controls.MessageBox, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MessageBox.2.1.0\lib\net461\Gat.Controls.MessageBox.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -84,6 +87,7 @@
     <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
       <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
     </Reference>
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -129,6 +133,7 @@
     <Content Include="Registration.aspx" />
     <Content Include="ClientPage.aspx" />
     <Content Include="ReportPage.aspx" />
+    <Content Include="PDRResults.aspx" />
     <Content Include="TeamAssembly.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
@@ -234,6 +239,13 @@
     </Compile>
     <Compile Include="ReportPage.aspx.designer.cs">
       <DependentUpon>ReportPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PDRResults.aspx.cs">
+      <DependentUpon>PDRResults.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PDRResults.aspx.designer.cs">
+      <DependentUpon>PDRResults.aspx</DependentUpon>
     </Compile>
     <Compile Include="Startup1.cs" />
     <Compile Include="TeamAssembly.aspx.cs">
