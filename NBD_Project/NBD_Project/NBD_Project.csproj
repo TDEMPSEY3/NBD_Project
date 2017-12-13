@@ -125,6 +125,7 @@
     <Content Include="ProductionDailyReport.aspx" />
     <Content Include="ProductionPlan.aspx" />
     <Content Include="ProjectAdminReport.aspx" />
+    <Content Include="ProjectAdminReportResult.aspx" />
     <Content Include="Registration.aspx" />
     <Content Include="ClientPage.aspx" />
     <Content Include="ReportPage.aspx" />
@@ -204,6 +205,13 @@
     </Compile>
     <Compile Include="ProjectAdminReport.aspx.designer.cs">
       <DependentUpon>ProjectAdminReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectAdminReportResult.aspx.cs">
+      <DependentUpon>ProjectAdminReportResult.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectAdminReportResult.aspx.designer.cs">
+      <DependentUpon>ProjectAdminReportResult.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Registration.aspx.cs">
