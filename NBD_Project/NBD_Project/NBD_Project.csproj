@@ -117,9 +117,10 @@
       <DependentUpon>Users.mdf</DependentUpon>
     </Content>
     <Content Include="ClientInfo.aspx" />
-    <Content Include="DesignDailyReport.aspx" />
     <Content Include="DesignBid.aspx" />
     <Content Include="DesignBudget.aspx" />
+    <Content Include="DesignDailyReport.aspx" />
+    <Content Include="DesignResultPage.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="PendingApprovals.aspx" />
     <Content Include="ProductionDailyReport.aspx" />
@@ -149,13 +150,6 @@
     <Compile Include="ClientInfo.aspx.designer.cs">
       <DependentUpon>ClientInfo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="DesignDailyReport.aspx.cs">
-      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DesignDailyReport.aspx.designer.cs">
-      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
-    </Compile>
     <Compile Include="DesignBid.aspx.cs">
       <DependentUpon>DesignBid.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -169,6 +163,18 @@
     </Compile>
     <Compile Include="DesignBudget.aspx.designer.cs">
       <DependentUpon>DesignBudget.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignDailyReport.aspx.cs">
+      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignDailyReport.aspx.designer.cs">
+      <DependentUpon>DesignDailyReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignResultPage.aspx.cs">
+      <DependentUpon>DesignResultPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignResultPage.aspx.designer.cs">
+      <DependentUpon>DesignResultPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
