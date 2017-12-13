@@ -42,6 +42,14 @@ namespace NBD_Project
             }
         }
 
-        
+        protected void btnExit_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/HomePage.aspx");
+        }
+
+        protected void btnSave_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/PDRResults.aspx");
+        }
     }
 }

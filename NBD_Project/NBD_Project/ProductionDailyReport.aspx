@@ -169,7 +169,7 @@
                 </asp:Panel>
           </div>
           </div>
-          <asp:Button ID="btnSave" runat="server" Text="Save" />
+          <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
           <asp:Button ID="btnExit" runat="server" OnClick="btnExit_Click" Text="Exit" />
     </form>
 </body>
