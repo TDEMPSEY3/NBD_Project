@@ -32,23 +32,18 @@
             </div>
             <p>            
                 <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx">Report</asp:HyperLink>
-            </p>
-           
+            </p>           
             <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
-                </div>
-                
-           
+            </div>                          
             <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
                     </p>
-            </div>
-           
-
+            </div>         
             <p>
                 <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
             </p>
@@ -63,15 +58,23 @@
             </div>
             <p>&nbsp;</p>
         </div>
-        <div id ="welcome">
-            <strong>
-            <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
-            </strong>&nbsp;<br />
-            <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
+        
+        <div id="welcome" style="height: 24px">   
+            <table style="width:100%;">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td style="text-align: right">
+                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
+                        <br />
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>
+    
             <br />
-            <br />
-            <br />
-        </div>
+        </div>        
+
         <div style="height: 114px; margin-top: 0px;"><strong><em>Pending Approvals</em></strong><br />
             <asp:LinkButton ID="LinkButton1" runat="server">View</asp:LinkButton>
 &nbsp;&nbsp; Design Bid #4256789<br />

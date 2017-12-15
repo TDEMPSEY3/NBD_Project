@@ -11,11 +11,14 @@ namespace NBD_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           //make sure user is logged into the system
+            //make sure user is logged into the system
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
             else
-                lblWelcome.Text += " " + User.Identity.Name;
+            {
+                if (!IsPostBack)
+                    lblWelcome.Text += " " + User.Identity.Name;
+            }
         }
 
         protected void lnkLogout_Click(object sender, EventArgs e)

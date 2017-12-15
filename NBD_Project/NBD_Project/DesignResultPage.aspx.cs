@@ -11,10 +11,16 @@ namespace NBD_Project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!User.Identity.IsAuthenticated)
+                Response.Redirect("~/LogIn.aspx");
+            else
+            {
+                if (!IsPostBack)
+                    lblWelcome.Text += " " + User.Identity.Name;
+            }
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void lnkLogout_Click(object sender, EventArgs e)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
 

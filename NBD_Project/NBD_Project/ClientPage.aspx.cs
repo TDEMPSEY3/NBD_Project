@@ -15,12 +15,15 @@ namespace NBD_Project
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
             else
-                lblWelcome.Text += " " + User.Identity.Name;
+            {
+                if (!IsPostBack)
+                    lblWelcome.Text += " " + User.Identity.Name;
+            }
 
             createDiv.Visible = false;
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void lnkLogout_Click(object sender, EventArgs e)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
 

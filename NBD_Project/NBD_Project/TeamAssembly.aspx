@@ -33,7 +33,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="auto-style8">
         <div id="NavMenu">
             <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
             <p>
@@ -54,18 +53,18 @@
             <p>            
                 <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx">Report</asp:HyperLink>
             </p>
-           <div style="margin-left: 40px">
+           
+            <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
-                </div>            
-             <div style="margin-left: 40px">
+                </div>                        
+            <div style="margin-left: 40px">
                 <p>
                 <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
                     </p>
             </div>
-
             <p>
                 <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
             </p>
@@ -80,14 +79,22 @@
             </div>
             <p>&nbsp;</p>
         </div>
-        <div id ="welcome">
-            <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
-        &nbsp;<br />
-            <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
-            <br />
-            <br />
+        
+        <div id="welcome" style="height: 24px">   
+            <table style="width:100%;">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td style="text-align: right">
+                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
+                        <br />
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>    
             <br />
         </div>
+        
         <div>
             <table class="auto-style1">
                 <tr>
@@ -97,7 +104,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style4">
-                        <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="253px">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="25px" Width="253px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Niagara College</asp:ListItem>
                             <asp:ListItem>Homescape Hotel</asp:ListItem>
@@ -105,7 +112,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList2" runat="server" Height="17px" Width="258px">
+                        <asp:DropDownList ID="DropDownList2" runat="server" Height="25px" Width="258px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Gary Brody</asp:ListItem>
                             <asp:ListItem>Nola Darling</asp:ListItem>
@@ -119,7 +126,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="261px">
+                        <asp:DropDownList ID="DropDownList3" runat="server" Height="25px" Width="261px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Sales Associate</asp:ListItem>
                             <asp:ListItem>Designer</asp:ListItem>
@@ -130,7 +137,7 @@
                 <tr>
                     <td class="auto-style6"></td>
                     <td class="auto-style7">
-                        <asp:DropDownList ID="DropDownList4" runat="server" Height="17px" Width="258px">
+                        <asp:DropDownList ID="DropDownList4" runat="server" Height="25px" Width="258px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Gary Brody</asp:ListItem>
                             <asp:ListItem>Nola Darling</asp:ListItem>
@@ -144,7 +151,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style7">
-                        <asp:DropDownList ID="DropDownList12" runat="server" Height="16px" Width="261px">
+                        <asp:DropDownList ID="DropDownList12" runat="server" Height="25px" Width="261px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Sales Associate</asp:ListItem>
                             <asp:ListItem>Designer</asp:ListItem>
@@ -155,7 +162,7 @@
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList5" runat="server" Height="17px" Width="258px">
+                        <asp:DropDownList ID="DropDownList5" runat="server" Height="25px" Width="258px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Gary Brody</asp:ListItem>
                             <asp:ListItem>Nola Darling</asp:ListItem>
@@ -169,7 +176,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList13" runat="server" Height="16px" Width="261px">
+                        <asp:DropDownList ID="DropDownList13" runat="server" Height="25px" Width="261px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Sales Associate</asp:ListItem>
                             <asp:ListItem>Designer</asp:ListItem>
@@ -180,7 +187,7 @@
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList10" runat="server" Height="17px" Width="258px">
+                        <asp:DropDownList ID="DropDownList10" runat="server" Height="25px" Width="258px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Gary Brody</asp:ListItem>
                             <asp:ListItem>Nola Darling</asp:ListItem>
@@ -194,7 +201,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList14" runat="server" Height="16px" Width="261px">
+                        <asp:DropDownList ID="DropDownList14" runat="server" Height="25px" Width="261px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Sales Associate</asp:ListItem>
                             <asp:ListItem>Designer</asp:ListItem>
@@ -205,7 +212,7 @@
                 <tr>
                     <td class="auto-style4">&nbsp;</td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList11" runat="server" Height="17px" Width="258px">
+                        <asp:DropDownList ID="DropDownList11" runat="server" Height="25px" Width="258px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Gary Brody</asp:ListItem>
                             <asp:ListItem>Nola Darling</asp:ListItem>
@@ -219,7 +226,7 @@
                         </asp:DropDownList>
                     </td>
                     <td class="auto-style5">
-                        <asp:DropDownList ID="DropDownList15" runat="server" Height="16px" Width="261px">
+                        <asp:DropDownList ID="DropDownList15" runat="server" Height="24px" Width="261px">
                             <asp:ListItem Selected="True">Select...</asp:ListItem>
                             <asp:ListItem>Sales Associate</asp:ListItem>
                             <asp:ListItem>Designer</asp:ListItem>
@@ -228,7 +235,6 @@
                     </td>
                 </tr>
             </table>
-            </div>
             <asp:Button ID="Button1" runat="server" Text="Create Team" />
         </div>
     </form>

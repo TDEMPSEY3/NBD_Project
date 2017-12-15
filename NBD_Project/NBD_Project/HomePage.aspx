@@ -59,24 +59,26 @@
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PAdminReportLink" runat="server" href="ProjectAdminReport.aspx">Project Administrator Report</asp:HyperLink>
             </div>
-            <p>&nbsp;</p>
-       
-            </div>
-        <div id="hp">
-        <div style="height: 24px">   
+            <p>&nbsp;</p>       
+        </div>
+
+        <div id="welcome" style="height: 24px">   
             <table style="width:100%;">
                 <tr>
                     <td>
-                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
-                    </td>
+                        &nbsp;</td>
                     <td style="text-align: right">
+                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
+                        <br />
                         <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>
     
             <br />
-        </div><br /><br />
+        </div>
+        
+        <br /><br />
         
         <div style="height: 191px"><strong><em>Announcements<br />
             </em></strong><br />Client #2356 has requested a meeting for rescheduling and readjusting for project #456987<br />
