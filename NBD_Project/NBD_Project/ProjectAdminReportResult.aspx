@@ -4,11 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Project Admin Report</title>
         <style type="text/css">
-        #NavMenu {
-            width: 250px;
-        }
             .auto-style4 {
                 width: 731px;
             }
@@ -44,6 +41,7 @@
                 text-align: center;
             }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -110,128 +108,129 @@
             <br />
         </div>
         
-        <div>
-            <table class="auto-style4">
-                <tr>
-                    <td class="auto-style10" colspan="10"><strong>Project Administration Report</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style9" colspan="10"><strong>
-                        <asp:Label ID="lblReportDate" runat="server" CssClass="auto-style11" Text="Date"></asp:Label>
-                        </strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style11" colspan="10"><strong>Bid Stage Projects</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style13" colspan="2"><strong>Project</strong></td>
-                    <td class="auto-style13" colspan="2"><strong>Est. Bid</strong></td>
-                    <td class="auto-style13" colspan="2"><strong>Actual/Est Design Hours</strong></td>
-                    <td class="auto-style13" colspan="2"><strong>Actual/Est Design&nbsp; Costs</strong></td>
-                    <td class="auto-style13" colspan="2"><strong>Hrs/$ Remaining</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style9" colspan="2">Project Name</td>
-                    <td class="auto-style9" colspan="2">$</td>
-                    <td class="auto-style9" colspan="2">#/#</td>
-                    <td class="auto-style9" colspan="2">$/$</td>
-                    <td class="auto-style9" colspan="2">#/$</td>
-                </tr>
-                <tr>
-                    <td class="auto-style9" colspan="2">Project Name</td>
-                    <td class="auto-style9" colspan="2">$</td>
-                    <td class="auto-style9" colspan="2">#/#</td>
-                    <td class="auto-style9" colspan="2">$/$</td>
-                    <td class="auto-style9" colspan="2">#/$</td>
-                </tr>
-                <tr>
-                    <td class="auto-style9" colspan="2">Project Name</td>
-                    <td class="auto-style9" colspan="2">$</td>
-                    <td class="auto-style9" colspan="2">#/#</td>
-                    <td class="auto-style9" colspan="2">$/$</td>
-                    <td class="auto-style9" colspan="2">#/$</td>
-                </tr>
-                <tr>
-                    <td colspan="10">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style11" colspan="10"><strong>Production Stage Projects</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style7"><strong>Project</strong></td>
-                    <td class="auto-style8"><strong>Bid $</strong></td>
-                    <td class="auto-style8"><strong>Prod Plan Est.</strong></td>
-                    <td class="auto-style8"><strong>Total Cost to date</strong></td>
-                    <td class="auto-style8"><strong>Actual Mtl $</strong></td>
-                    <td class="auto-style8"><strong>Est. Mtl $</strong></td>
-                    <td class="auto-style8"><strong>Actual Labor $ Prod</strong></td>
-                    <td class="auto-style8"><strong>Est. Labor $ Prod</strong></td>
-                    <td class="auto-style8"><strong>Actual Labor $ Design</strong></td>
-                    <td class="auto-style8"><strong>Est. Labor $ Design</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style15">Project Name</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                </tr>
-                <tr>
-                    <td class="auto-style15">Project Name</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                    <td class="auto-style14">$</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                    <td class="auto-style9" colspan="2">
-                        <asp:Button ID="btnDone" runat="server" OnClick="btnDone_Click" Text="Done" Width="100px" />
-                    </td>
-                </tr>
-            </table>
-
+        <div id="mainDiv">
+            <div>
+                <table class="auto-style4">
+                    <tr>
+                        <td class="auto-style10" colspan="10"><strong>Project Administration Report</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9" colspan="10"><strong>
+                            <asp:Label ID="lblReportDate" runat="server" CssClass="auto-style11" Text="Date"></asp:Label>
+                            </strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11" colspan="10"><strong>Bid Stage Projects</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style13" colspan="2"><strong>Project</strong></td>
+                        <td class="auto-style13" colspan="2"><strong>Est. Bid</strong></td>
+                        <td class="auto-style13" colspan="2"><strong>Actual/Est Design Hours</strong></td>
+                        <td class="auto-style13" colspan="2"><strong>Actual/Est Design&nbsp; Costs</strong></td>
+                        <td class="auto-style13" colspan="2"><strong>Hrs/$ Remaining</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9" colspan="2">Project Name</td>
+                        <td class="auto-style9" colspan="2">$</td>
+                        <td class="auto-style9" colspan="2">#/#</td>
+                        <td class="auto-style9" colspan="2">$/$</td>
+                        <td class="auto-style9" colspan="2">#/$</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9" colspan="2">Project Name</td>
+                        <td class="auto-style9" colspan="2">$</td>
+                        <td class="auto-style9" colspan="2">#/#</td>
+                        <td class="auto-style9" colspan="2">$/$</td>
+                        <td class="auto-style9" colspan="2">#/$</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9" colspan="2">Project Name</td>
+                        <td class="auto-style9" colspan="2">$</td>
+                        <td class="auto-style9" colspan="2">#/#</td>
+                        <td class="auto-style9" colspan="2">$/$</td>
+                        <td class="auto-style9" colspan="2">#/$</td>
+                    </tr>
+                    <tr>
+                        <td colspan="10">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11" colspan="10"><strong>Production Stage Projects</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7"><strong>Project</strong></td>
+                        <td class="auto-style8"><strong>Bid $</strong></td>
+                        <td class="auto-style8"><strong>Prod Plan Est.</strong></td>
+                        <td class="auto-style8"><strong>Total Cost to date</strong></td>
+                        <td class="auto-style8"><strong>Actual Mtl $</strong></td>
+                        <td class="auto-style8"><strong>Est. Mtl $</strong></td>
+                        <td class="auto-style8"><strong>Actual Labor $ Prod</strong></td>
+                        <td class="auto-style8"><strong>Est. Labor $ Prod</strong></td>
+                        <td class="auto-style8"><strong>Actual Labor $ Design</strong></td>
+                        <td class="auto-style8"><strong>Est. Labor $ Design</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style15">Project Name</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style15">Project Name</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                        <td class="auto-style14">$</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                        <td class="auto-style9" colspan="2">
+                            <asp:Button ID="btnDone" runat="server" OnClick="btnDone_Click" Text="Done" Width="100px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>

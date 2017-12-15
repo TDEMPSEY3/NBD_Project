@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Create Design Daily Report</title>
     <style type="text/css">
         .auto-style50 {
             height: 343px;
@@ -28,6 +28,7 @@
             text-align: left;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -89,82 +90,83 @@
                         <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
                     </td>
                 </tr>
-            </table>
-    
+            </table>    
             <br />
         </div>        
 
-        <div class="auto-style50">
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style51" colspan="5"><strong>Designer Daily Work Report</strong></td>
-                    <td class="auto-style51">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style37">&nbsp;</td>
-                    <td class="auto-style47">&nbsp;</td>
-                    <td class="auto-style39">&nbsp;</td>
-                    <td class="auto-style42">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td>Date:&nbsp;
-                    </td>
-                    <td class="auto-style47">
-                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style39"></td>
-                    <td class="auto-style42"></td>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style10">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style37">&nbsp;</td>
-                    <td class="auto-style47">&nbsp;</td>
-                    <td class="auto-style39">&nbsp;</td>
-                    <td class="auto-style42">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style37"></td>
-                    <td class="auto-style41">Project</td>
-                    <td class="auto-style52">Stage</td>
-                    <td class="auto-style52">Hours</td>
-                    <td class="auto-style52">Task</td>
-                    <td class="auto-style52">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style49">
-                        &nbsp;</td>
-                    <td class="auto-style47">
-                        <asp:TextBox ID="TextBox1" runat="server" Width="260px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style39">
-                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style42">
-                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style10">
-                        <asp:TextBox ID="TextBox4" runat="server" Width="437px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style10">
-                        <asp:Button ID="btnAdd" runat="server" Text="Add" />
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style38">&nbsp;</td>
-                    <td class="auto-style48">&nbsp;</td>
-                    <td class="auto-style41">&nbsp;</td>
-                    <td class="auto-style44">&nbsp;</td>
-                    <td class="auto-style31">&nbsp;</td>
-                    <td class="auto-style31">&nbsp;</td>
-                </tr>
-                </table>
-            <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" OnClick="Button2_Click" Width="100px" />
-          </div>
+        <div id="mainDiv">
+            <div class="auto-style50">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style51" colspan="5"><strong>Designer Daily Work Report</strong></td>
+                        <td class="auto-style51">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style37">&nbsp;</td>
+                        <td class="auto-style47">&nbsp;</td>
+                        <td class="auto-style39">&nbsp;</td>
+                        <td class="auto-style42">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Date:&nbsp;
+                        </td>
+                        <td class="auto-style47">
+                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style39"></td>
+                        <td class="auto-style42"></td>
+                        <td class="auto-style10"></td>
+                        <td class="auto-style10">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style37">&nbsp;</td>
+                        <td class="auto-style47">&nbsp;</td>
+                        <td class="auto-style39">&nbsp;</td>
+                        <td class="auto-style42">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style37"></td>
+                        <td class="auto-style41">Project</td>
+                        <td class="auto-style52">Stage</td>
+                        <td class="auto-style52">Hours</td>
+                        <td class="auto-style52">Task</td>
+                        <td class="auto-style52">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style49">
+                            &nbsp;</td>
+                        <td class="auto-style47">
+                            <asp:TextBox ID="TextBox1" runat="server" Width="260px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style39">
+                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style42">
+                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style10">
+                            <asp:TextBox ID="TextBox4" runat="server" Width="437px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style10">
+                            <asp:Button ID="btnAdd" runat="server" Text="Add" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style38">&nbsp;</td>
+                        <td class="auto-style48">&nbsp;</td>
+                        <td class="auto-style41">&nbsp;</td>
+                        <td class="auto-style44">&nbsp;</td>
+                        <td class="auto-style31">&nbsp;</td>
+                        <td class="auto-style31">&nbsp;</td>
+                    </tr>
+                    </table>
+                <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" OnClick="Button2_Click" Width="100px" />
+              </div>
+        </div>
     </form>
 </body>
 </html>

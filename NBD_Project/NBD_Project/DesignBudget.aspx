@@ -4,11 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Create Design Budget</title>
         <style type="text/css">
-        #NavMenu {
-            width: 250px;
-        }
             .auto-style1 {
                 text-align: center;
             }
@@ -70,6 +67,7 @@
                 height: 26px;
             }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -136,246 +134,248 @@
             <br />
         </div>
         
-        <div class="auto-style1">
-            <strong>Design Budget</strong>
-        </div>
-        <div>
-            Client
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style3">
-                        <table class="auto-style2">
-                            <tr>
-                                <td class="auto-style4">Client Name:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Contact:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">Client Address:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Phone:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox4" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">&nbsp;</td>
-                                <td class="auto-style5">&nbsp;</td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Contact Date:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            NBD Staff
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style3">
-                        <table class="auto-style2">
-                            <tr>
-                                <td class="auto-style4">Sales Associate:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox6" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Phone:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox7" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">Designer:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox8" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Phone:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox9" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
+        <div id="mainDiv">
+            <div class="auto-style1">
+                <strong>Design Budget</strong>
+            </div>
+            <div>
+                Client
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style3">
+                            <table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style4">Client Name:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Contact:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">Client Address:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Phone:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox4" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">&nbsp;</td>
+                                    <td class="auto-style5">&nbsp;</td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Contact Date:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
                             </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            Project
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style3">
-                        <table class="auto-style2">
-                            <tr>
-                                <td class="auto-style4">Budget Sumitted:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox10" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Project Site:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox11" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">Est Begin Date:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox12" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">Bid Amount:</td>
-                                <td>
-                                    <asp:TextBox ID="TextBox13" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style4">Est Compl Date:</td>
-                                <td class="auto-style5">
-                                    <asp:TextBox ID="TextBox19" runat="server" Width="200px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style6">&nbsp;</td>
-                                <td class="auto-style4">&nbsp;</td>
-                                <td>
-                                    &nbsp;</td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-        <div>
-            Design Budget
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style3">
-                        <table class="auto-style2">
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    Task</td>
-                                <td class="auto-style11">Date</td>
-                                <td class="auto-style10">Hours</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">Hours to Date:</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    <asp:TextBox ID="TextBox20" runat="server" Width="510px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style11">
-                                    <asp:TextBox ID="TextBox21" runat="server" Width="100px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style10">
-                                    <asp:TextBox ID="TextBox22" runat="server" Width="100px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">Estimated Hours:</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    <asp:TextBox ID="TextBox25" runat="server" Width="510px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style11">
-                                    <asp:TextBox ID="TextBox24" runat="server" Width="100px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">Total Hours</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">
-                                    <asp:TextBox ID="TextBox23" runat="server" Width="100px"></asp:TextBox>
-                                </td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style7">
-                                    &nbsp;</td>
-                                <td class="auto-style11">&nbsp;</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style8">&nbsp;</td>
-                                <td class="auto-style12">
-                                    ____________________</td>
-                                <td class="auto-style11">____________</td>
-                                <td class="auto-style10">&nbsp;</td>
-                                <td class="auto-style1">
-                                    &nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td class="auto-style13"></td>
-                                <td class="auto-style14">
-                                    Submitted by</td>
-                                <td class="auto-style15">Date</td>
-                                <td class="auto-style16"></td>
-                                <td class="auto-style17">
-                                </td>
-                            </tr>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                NBD Staff
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style3">
+                            <table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style4">Sales Associate:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox6" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Phone:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox7" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">Designer:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox8" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Phone:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox9" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                Project
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style3">
+                            <table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style4">Budget Sumitted:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox10" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Project Site:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox11" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">Est Begin Date:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox12" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">Bid Amount:</td>
+                                    <td>
+                                        <asp:TextBox ID="TextBox13" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style4">Est Compl Date:</td>
+                                    <td class="auto-style5">
+                                        <asp:TextBox ID="TextBox19" runat="server" Width="200px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style6">&nbsp;</td>
+                                    <td class="auto-style4">&nbsp;</td>
+                                    <td>
+                                        &nbsp;</td>
+                                </tr>
                             </table>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                Design Budget
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style3">
+                            <table class="auto-style2">
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        Task</td>
+                                    <td class="auto-style11">Date</td>
+                                    <td class="auto-style10">Hours</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">Hours to Date:</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        <asp:TextBox ID="TextBox20" runat="server" Width="510px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style11">
+                                        <asp:TextBox ID="TextBox21" runat="server" Width="100px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style10">
+                                        <asp:TextBox ID="TextBox22" runat="server" Width="100px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">Estimated Hours:</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        <asp:TextBox ID="TextBox25" runat="server" Width="510px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style11">
+                                        <asp:TextBox ID="TextBox24" runat="server" Width="100px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">Total Hours</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">
+                                        <asp:TextBox ID="TextBox23" runat="server" Width="100px"></asp:TextBox>
+                                    </td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style7">
+                                        &nbsp;</td>
+                                    <td class="auto-style11">&nbsp;</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style8">&nbsp;</td>
+                                    <td class="auto-style12">
+                                        ____________________</td>
+                                    <td class="auto-style11">____________</td>
+                                    <td class="auto-style10">&nbsp;</td>
+                                    <td class="auto-style1">
+                                        &nbsp;</td>
+                                </tr>
+                                <tr>
+                                    <td class="auto-style13"></td>
+                                    <td class="auto-style14">
+                                        Submitted by</td>
+                                    <td class="auto-style15">Date</td>
+                                    <td class="auto-style16"></td>
+                                    <td class="auto-style17">
+                                    </td>
+                                </tr>
+                                </table>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>

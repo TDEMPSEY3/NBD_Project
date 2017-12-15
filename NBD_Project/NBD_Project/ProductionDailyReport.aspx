@@ -4,11 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Create Production Daily Report</title>
     <style type="text/css">
-        #welcome {
-            height: 47px;
-        }
         .auto-style1 {
             width: 898px;
         }
@@ -42,6 +39,7 @@
             height: 136px;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -109,120 +107,122 @@
             <br />
         </div>
         
-        <div style="height: 544px" class="auto-style11">
-            <div class="auto-style12">
-                <strong>Production Daily Report<br />
-                Date&nbsp;: December 13th, 2017<br />
-                Project: Niagara College Canada</strong><br />
-                </div>
+        <div id="mainDiv">
+            <div style="height: 544px" class="auto-style11">
+                <div class="auto-style12">
+                    <strong>Production Daily Report<br />
+                    Date&nbsp;: December 13th, 2017<br />
+                    Project: Niagara College Canada</strong><br />
+                    </div>
                 
-                <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="Materials Used"></asp:Label>
+                    <asp:Label ID="Label1" runat="server" style="font-weight: 700" Text="Materials Used"></asp:Label>
+                    <br />
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style6">Code</td>
+                        <td class="auto-style6">Quantity</td>
+                        <td class="auto-style6">Unit Cost</td>
+                        <td class="auto-style6">Ext. Cost</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="212px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox2" runat="server" Height="16px" Width="210px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox3" runat="server" Height="19px" Width="211px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox4" runat="server" Height="21px" Width="201px"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox5" runat="server" Height="16px" Width="212px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="212px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox7" runat="server" Height="16px" Width="206px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="TextBox8" runat="server" Height="21px" Width="201px"></asp:TextBox>
+                        </td>
+                    </tr>
+                </table>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="BtnAdd" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
                 <br />
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style6">Code</td>
-                    <td class="auto-style6">Quantity</td>
-                    <td class="auto-style6">Unit Cost</td>
-                    <td class="auto-style6">Ext. Cost</td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox1" runat="server" Height="16px" Width="212px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox2" runat="server" Height="16px" Width="210px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox3" runat="server" Height="19px" Width="211px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox4" runat="server" Height="21px" Width="201px"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox5" runat="server" Height="16px" Width="212px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox6" runat="server" Height="20px" Width="212px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox7" runat="server" Height="16px" Width="206px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="TextBox8" runat="server" Height="21px" Width="201px"></asp:TextBox>
-                    </td>
-                </tr>
-            </table>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="BtnAdd" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
-            <br />
-            <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Labor"></asp:Label>
-            <br />
-            <table class="auto-style7">
-                <tr>
-                    <td class="auto-style10">Worker</td>
-                    <td class="auto-style10">Hours</td>
-                    <td class="auto-style10">Cost/Hr</td>
-                    <td class="auto-style10">Ext.Cost</td>
-                    <td class="auto-style10">Task</td>
-                </tr>
-                <tr>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox18" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox19" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox17" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox20" runat="server"></asp:TextBox>
-                    </td>
-                    <td class="auto-style9">
-                        <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
-                    </td>
-                </tr>
-            </table>
-            <br />
-            <asp:Button ID="BtnAdd2" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
-          </div>
-          <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
-          <asp:Button ID="btnExit" runat="server" OnClick="btnExit_Click" Text="Exit" />
+                <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Labor"></asp:Label>
+                <br />
+                <table class="auto-style7">
+                    <tr>
+                        <td class="auto-style10">Worker</td>
+                        <td class="auto-style10">Hours</td>
+                        <td class="auto-style10">Cost/Hr</td>
+                        <td class="auto-style10">Ext.Cost</td>
+                        <td class="auto-style10">Task</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox15" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox18" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox16" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox19" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox11" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox14" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox17" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox20" runat="server"></asp:TextBox>
+                        </td>
+                        <td class="auto-style9">
+                            <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
+                        </td>
+                    </tr>
+                </table>
+                <br />
+                <asp:Button ID="BtnAdd2" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
+              </div>
+              <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
+              <asp:Button ID="btnExit" runat="server" OnClick="btnExit_Click" Text="Exit" />
+        </div>
     </form>
 </body>
 </html>

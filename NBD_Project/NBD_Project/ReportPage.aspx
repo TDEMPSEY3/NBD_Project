@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Reports</title>
     <style type="text/css">
         .auto-style1 {
             width: 756px;
@@ -27,6 +27,7 @@
             font-size: x-large;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -94,76 +95,78 @@
             <br />
         </div>
         
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style9" colspan="5"><strong>Search for Report</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Report type:</strong></td>
-                    <td colspan="2">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                            <asp:ListItem Selected="True">Production Daily Report</asp:ListItem>
-                            <asp:ListItem>Designer Daily Report</asp:ListItem>
-                        </asp:RadioButtonList>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Project:</strong></td>
-                    <td class="auto-style5">
-                        <asp:DropDownList ID="ddlProject" runat="server" Width="148px">
-                            <asp:ListItem Value="0">Select a project</asp:ListItem>
-                            <asp:ListItem>Project 1</asp:ListItem>
-                            <asp:ListItem>Project 2</asp:ListItem>
-                            <asp:ListItem>Project 3</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Date: </strong></td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style8">
-                        <asp:Button ID="btnSearch" runat="server" CssClass="auto-style7" OnClick="btnSearch_Click" Text="Search" Width="100px" />
-                    </td>
-                </tr>
-            </table>
+        <div id="mainDiv">
+            <div>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style9" colspan="5"><strong>Search for Report</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Report type:</strong></td>
+                        <td colspan="2">
+                            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                                <asp:ListItem Selected="True">Production Daily Report</asp:ListItem>
+                                <asp:ListItem>Designer Daily Report</asp:ListItem>
+                            </asp:RadioButtonList>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Project:</strong></td>
+                        <td class="auto-style5">
+                            <asp:DropDownList ID="ddlProject" runat="server" Width="148px">
+                                <asp:ListItem Value="0">Select a project</asp:ListItem>
+                                <asp:ListItem>Project 1</asp:ListItem>
+                                <asp:ListItem>Project 2</asp:ListItem>
+                                <asp:ListItem>Project 3</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Date: </strong></td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style8">
+                            <asp:Button ID="btnSearch" runat="server" CssClass="auto-style7" OnClick="btnSearch_Click" Text="Search" Width="100px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>

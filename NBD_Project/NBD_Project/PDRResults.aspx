@@ -6,7 +6,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Production Daily Report</title>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -74,83 +75,85 @@
             <br />
         </div>
         
-        <div><br />
-            <br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" style="text-align: center" Text="Production Daily Work Report"></asp:Label>
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date: 12/12/2017<br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Project: Niagara College<br />
-            <strong>Materials Used</strong><br />
-            <asp:Table ID="Table1" runat="server" Width="733px">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server" ColumnSpan="1">Code</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Quantity</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Unit Cost   </asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Ext. Cost</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Approval status</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-            <br />
-            <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Labor"></asp:Label>
-            <asp:Table ID="Table2" runat="server" Width="733px">
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server" ColumnSpan="1">Worker</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Hours</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Cost/Hr</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Ext. Cost</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Task</asp:TableCell>
-                    <asp:TableCell runat="server" ColumnSpan="1">Approval Status</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server">
-                    <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
-                    <asp:TableCell runat="server">0</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">$0.00</asp:TableCell>
-                    <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
-                    <asp:TableCell runat="server">Pending</asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>
-            <br />
-            <a href="HomePage.aspx">Exit</a><br />
-            
+        <div id="mainDiv">
+            <div>
+                <br />
+                <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <asp:Label ID="Label1" runat="server" style="text-align: center" Text="Production Daily Work Report"></asp:Label>
+                <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Date: 12/12/2017<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Project: Niagara College<br />
+                <strong>Materials Used</strong><br />
+                <asp:Table ID="Table1" runat="server" Width="733px">
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server" ColumnSpan="1">Code</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Quantity</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Unit Cost   </asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Ext. Cost</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Approval status</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br />
+                <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Labor"></asp:Label>
+                <asp:Table ID="Table2" runat="server" Width="733px">
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server" ColumnSpan="1">Worker</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Hours</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Cost/Hr</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Ext. Cost</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Task</asp:TableCell>
+                        <asp:TableCell runat="server" ColumnSpan="1">Approval Status</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                    <asp:TableRow runat="server">
+                        <asp:TableCell runat="server">xxxxxxx</asp:TableCell>
+                        <asp:TableCell runat="server">0</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">$0.00</asp:TableCell>
+                        <asp:TableCell runat="server">xxxxxxxxxx.....</asp:TableCell>
+                        <asp:TableCell runat="server">Pending</asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+                <br />
+                <a href="HomePage.aspx">Exit</a><br />           
+            </div>
         </div>
     </form>
 </body>

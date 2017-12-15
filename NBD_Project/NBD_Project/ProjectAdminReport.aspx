@@ -6,9 +6,6 @@
 <head runat="server">
     <title></title>
         <style type="text/css">
-        #NavMenu {
-            width: 250px;
-        }
             .auto-style1 {
                 width: 731px;
             }
@@ -27,6 +24,7 @@
                 text-align: right;
             }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -93,32 +91,33 @@
             <br />
         </div>
         
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style5" colspan="3"><strong>Create new Project Administrator Report</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Date: </strong></td>
-                    <td class="auto-style3">
-                        <asp:TextBox ID="txtDate" runat="server" Width="140px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style3">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style6">
-                        <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="100px" />
-                    </td>
-                </tr>
-            </table>
-
+        <div id="mainDiv">
+            <div>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style5" colspan="3"><strong>Create new Project Administrator Report</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Date: </strong></td>
+                        <td class="auto-style3">
+                            <asp:TextBox ID="txtDate" runat="server" Width="140px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style3">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style3">&nbsp;</td>
+                        <td class="auto-style6">
+                            <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="100px" />
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>

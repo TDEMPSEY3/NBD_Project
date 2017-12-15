@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Design Daily Report</title>
     <style type="text/css">
         .auto-style1 {
             text-align: right;
@@ -99,6 +99,7 @@
             text-align: left;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -136,7 +137,6 @@
                 <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
                     </p>
             </div>
-
             <p>
                 <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
             </p>
@@ -168,100 +168,101 @@
             <br />
         </div>
         
-        <div class="auto-style22">
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style2" colspan="5"><strong>Designer Daily Work Report</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style37">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style39">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        6/15/2017</td>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style39"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style10"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">Submitted by:&nbsp;&nbsp;Tamara Bakken</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style39"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style10"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style9"></td>
-                    <td class="auto-style20"></td>
-                    <td class="auto-style9"></td>
-                    <td class="auto-style21"></td>
-                    <td class="auto-style10"></td>
-                </tr>
-                <tr>
-                    <td class="auto-style37"></td>
-                    <td class="auto-style6">Project</td>
-                    <td class="auto-style3">Stage</td>
-                    <td class="auto-style8">Hours</td>
-                    <td class="auto-style17">Task</td>
-                </tr>
-                <tr>
-                    <td class="auto-style1">
-                        &nbsp;</td>
-                    <td class="auto-style6">
-                        SJSU</td>
-                    <td class="auto-style3">
-                        B</td>
-                    <td class="auto-style8">
-                        2</td>
-                    <td class="auto-style17">
-                        Prepared final sketches of arboretum</td>
-                </tr>
-                <tr>
-                    <td class="auto-style38">&nbsp;</td>
-                    <td class="auto-style6">LS MALL</td>
-                    <td class="auto-style3">P</td>
-                    <td class="auto-style8">3</td>
-                    <td class="auto-style17">Monitored installation of fountain and pots</td>
-                </tr>
-                <tr>
-                    <td class="auto-style9">
-                        &nbsp;</td>
-                    <td class="auto-style12">Fremont</td>
-                    <td class="auto-style13">B</td>
-                    <td class="auto-style11">3</td>
-                    <td class="auto-style18">Work with client</td>
-                </tr>
-                <tr>
-                    <td class="auto-style38">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style41">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style19">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style38">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style14">_<span class="auto-style15">6/15/17</span>_</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style17">____<span class="auto-style16">Tamara Bakken</span>_____</td>
-                </tr>
-                <tr>
-                    <td class="auto-style53"></td>
-                    <td class="auto-style5"></td>
-                    <td class="auto-style3">Date</td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style17">Designer Name&nbsp;</td>
-                </tr>
-            </table>
-            <br />
-            <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="text-align: center" Text="Ok" Width="100px" />
-          </div>
-          </div>
+        <div id="mainDiv">
+            <div class="auto-style22">
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style2" colspan="5"><strong>Designer Daily Work Report</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style37">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style39">&nbsp;</td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            6/15/2017</td>
+                        <td class="auto-style5"></td>
+                        <td class="auto-style39"></td>
+                        <td class="auto-style7"></td>
+                        <td class="auto-style10"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style3">Submitted by:&nbsp;&nbsp;Tamara Bakken</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style39"></td>
+                        <td class="auto-style7"></td>
+                        <td class="auto-style10"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9"></td>
+                        <td class="auto-style20"></td>
+                        <td class="auto-style9"></td>
+                        <td class="auto-style21"></td>
+                        <td class="auto-style10"></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style37"></td>
+                        <td class="auto-style6">Project</td>
+                        <td class="auto-style3">Stage</td>
+                        <td class="auto-style8">Hours</td>
+                        <td class="auto-style17">Task</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style1">
+                            &nbsp;</td>
+                        <td class="auto-style6">
+                            SJSU</td>
+                        <td class="auto-style3">
+                            B</td>
+                        <td class="auto-style8">
+                            2</td>
+                        <td class="auto-style17">
+                            Prepared final sketches of arboretum</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style38">&nbsp;</td>
+                        <td class="auto-style6">LS MALL</td>
+                        <td class="auto-style3">P</td>
+                        <td class="auto-style8">3</td>
+                        <td class="auto-style17">Monitored installation of fountain and pots</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style9">
+                            &nbsp;</td>
+                        <td class="auto-style12">Fremont</td>
+                        <td class="auto-style13">B</td>
+                        <td class="auto-style11">3</td>
+                        <td class="auto-style18">Work with client</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style38">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style41">&nbsp;</td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style19">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style38">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style14">_<span class="auto-style15">6/15/17</span>_</td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style17">____<span class="auto-style16">Tamara Bakken</span>_____</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style53"></td>
+                        <td class="auto-style5"></td>
+                        <td class="auto-style3">Date</td>
+                        <td class="auto-style7"></td>
+                        <td class="auto-style17">Designer Name&nbsp;</td>
+                    </tr>
+                </table>
+                <br />
+                <asp:Button ID="btnOk" runat="server" OnClick="btnOk_Click" style="text-align: center" Text="Ok" Width="100px" />
+              </div>
+        </div>
     </form>
 </body>
 </html>

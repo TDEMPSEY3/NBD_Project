@@ -1,0 +1,20 @@
+﻿body {
+
+}
+
+#NavMenu {
+    float: left;
+    width: 15%;
+    background-color: #7FB944;
+    padding: 10px;
+}
+
+#welcome {
+    float:right;
+}
+
+#mainDiv {
+    float: right;
+    width: 82%;
+    padding: 10px;
+}

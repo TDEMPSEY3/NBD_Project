@@ -4,11 +4,8 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Pending Approvals</title>
         <style type="text/css">
-        #NavMenu {
-            width: 250px;
-        }
             .auto-style1 {
                 text-align: center;
             }
@@ -52,6 +49,7 @@
                 width: 170px;
             }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
 </head>
 <body>
     <form id="form1" runat="server">
@@ -118,82 +116,81 @@
             <br />
         </div>
         
-        <div class="auto-style1">
-            Pending Approvals
-            <br />
-        </div>
-        <div>
-
-            <table class="auto-style2">
-                <tr>
-                    <td class="auto-style7"><strong>Project Name</strong></td>
-                    <td class="auto-style7"><strong>Reports</strong></td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">SJSU</td>
-                    <td class="auto-style7">Design Bid</td>
-                    <td class="auto-style7">
-                        <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" OnClick="Button1_Click" />
-                    </td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">LS Mall</td>
-                    <td class="auto-style7">Production Plan</td>
-                    <td class="auto-style7">
-                        <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" OnClick="Button2_Click" />
-                    </td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style7">Fremont</td>
-                    <td class="auto-style7">Design Budget</td>
-                    <td class="auto-style7">
-                        <asp:Button ID="btnVwDtls" runat="server" Text="View Details" Width="100px" OnClick="Button3_Click" />
-                    </td>
-                    <td class="auto-style7">&nbsp;</td>
-                    <td class="auto-style8">&nbsp;</td>
-                </tr>
-            </table>
-        </div>
-        <div runat="server" id="details">
-
-            <table class="auto-style9">
-                <tr>
-                    <td class="auto-style10"><strong>Client</strong></td>
-                    <td class="auto-style13">&nbsp;</td>
-                    <td class="auto-style15">&nbsp;</td>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style11">Client Name:</td>
-                    <td class="auto-style14">London Sq. Mall</td>
-                    <td class="auto-style16"></td>
-                    <td class="auto-style11">Contact:</td>
-                    <td class="auto-style12">Amy Benson, Mngr.</td>
-                </tr>
-                <tr>
-                    <td class="auto-style10">Client Address:</td>
-                    <td class="auto-style13">12638 Mall Drive</td>
-                    <td class="auto-style15">&nbsp;</td>
-                    <td class="auto-style10">Phone:</td>
-                    <td>(408)838-5603</td>
-                </tr>
-                <tr>
-                    <td class="auto-style10">&nbsp;</td>
-                    <td class="auto-style13">Scotts Drive, CA 95060</td>
-                    <td class="auto-style15">&nbsp;</td>
-                    <td class="auto-style10">Contact Date:</td>
-                    <td>April 15, 2017</td>
-                </tr>
-            </table>
-
+        <div id="mainDiv">
+            <div class="auto-style1">
+                Pending Approvals
+                <br />
+            </div>
+            <div>
+                <table class="auto-style2">
+                    <tr>
+                        <td class="auto-style7"><strong>Project Name</strong></td>
+                        <td class="auto-style7"><strong>Reports</strong></td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">SJSU</td>
+                        <td class="auto-style7">Design Bid</td>
+                        <td class="auto-style7">
+                            <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" OnClick="Button1_Click" />
+                        </td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">LS Mall</td>
+                        <td class="auto-style7">Production Plan</td>
+                        <td class="auto-style7">
+                            <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" OnClick="Button2_Click" />
+                        </td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style7">Fremont</td>
+                        <td class="auto-style7">Design Budget</td>
+                        <td class="auto-style7">
+                            <asp:Button ID="btnVwDtls" runat="server" Text="View Details" Width="100px" OnClick="Button3_Click" />
+                        </td>
+                        <td class="auto-style7">&nbsp;</td>
+                        <td class="auto-style8">&nbsp;</td>
+                    </tr>
+                </table>
+            </div>
+            <div runat="server" id="details">
+                <table class="auto-style9">
+                    <tr>
+                        <td class="auto-style10"><strong>Client</strong></td>
+                        <td class="auto-style13">&nbsp;</td>
+                        <td class="auto-style15">&nbsp;</td>
+                        <td class="auto-style10">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style11">Client Name:</td>
+                        <td class="auto-style14">London Sq. Mall</td>
+                        <td class="auto-style16"></td>
+                        <td class="auto-style11">Contact:</td>
+                        <td class="auto-style12">Amy Benson, Mngr.</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">Client Address:</td>
+                        <td class="auto-style13">12638 Mall Drive</td>
+                        <td class="auto-style15">&nbsp;</td>
+                        <td class="auto-style10">Phone:</td>
+                        <td>(408)838-5603</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style10">&nbsp;</td>
+                        <td class="auto-style13">Scotts Drive, CA 95060</td>
+                        <td class="auto-style15">&nbsp;</td>
+                        <td class="auto-style10">Contact Date:</td>
+                        <td>April 15, 2017</td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>
