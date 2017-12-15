@@ -9,6 +9,48 @@
         #NavMenu {
             width: 250px;
         }
+            .auto-style1 {
+                text-align: center;
+            }
+            .auto-style2 {
+                width: 1293px;
+                height: 78px;
+            }
+            .auto-style7 {
+                height: 26px;
+                width: 258px;
+            }
+            .auto-style8 {
+                height: 26px;
+                width: 259px;
+            }
+            .auto-style9 {
+                width: 100%;
+            }
+            .auto-style10 {
+                width: 160px;
+            }
+            .auto-style11 {
+                width: 160px;
+                height: 26px;
+            }
+            .auto-style12 {
+                height: 26px;
+            }
+            .auto-style13 {
+                width: 240px;
+            }
+            .auto-style14 {
+                height: 26px;
+                width: 240px;
+            }
+            .auto-style15 {
+                width: 170px;
+            }
+            .auto-style16 {
+                height: 26px;
+                width: 170px;
+            }
     </style>
 </head>
 <body>
@@ -68,7 +110,83 @@
             <br />
             <br />
         </div>
-        <asp:Label ID="Label1" runat="server" Text="PENDING APPROVALS PAGE UNDER CONSTRUCTION"></asp:Label>
+        <div class="auto-style1">
+            Pending Approvals
+            <br />
+        </div>
+        <div>
+
+            <table class="auto-style2">
+                <tr>
+                    <td class="auto-style7"><strong>Project Name</strong></td>
+                    <td class="auto-style7"><strong>Reports</strong></td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">SJSU</td>
+                    <td class="auto-style7">Design Bid</td>
+                    <td class="auto-style7">
+                        <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" />
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">LS Mall</td>
+                    <td class="auto-style7">Production Plan</td>
+                    <td class="auto-style7">
+                        <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" />
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style7">Fremont</td>
+                    <td class="auto-style7">Design Budget</td>
+                    <td class="auto-style7">
+                        <asp:Button ID="btnVwDtls" runat="server" Text="View Details" Width="100px" OnClick="Button3_Click" />
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
+                    <td class="auto-style8">&nbsp;</td>
+                </tr>
+            </table>
+        </div>
+        <div runat="server" id="details" hidden="hidden">
+
+            <table class="auto-style9">
+                <tr>
+                    <td class="auto-style10"><strong>Client</strong></td>
+                    <td class="auto-style13">&nbsp;</td>
+                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style11">Client Name:</td>
+                    <td class="auto-style14">London Sq. Mall</td>
+                    <td class="auto-style16"></td>
+                    <td class="auto-style11">Contact:</td>
+                    <td class="auto-style12">Amy Benson, Mngr.</td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">Client Address:</td>
+                    <td class="auto-style13">12638 Mall Drive</td>
+                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style10">Phone:</td>
+                    <td>(408)838-5603</td>
+                </tr>
+                <tr>
+                    <td class="auto-style10">&nbsp;</td>
+                    <td class="auto-style13">Scotts Drive, CA 95060</td>
+                    <td class="auto-style15">&nbsp;</td>
+                    <td class="auto-style10">Contact Date:</td>
+                    <td>April 15, 2017</td>
+                </tr>
+            </table>
+
+        </div>
     </form>
 </body>
 </html>

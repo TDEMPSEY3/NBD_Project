@@ -26,5 +26,15 @@ namespace NBD_Project
 
             Response.Redirect("~/Login.aspx");
         }
+
+        protected void BtnVwDtls_Click(object sender, EventArgs e)
+        {
+            if (details.Visible == false)
+            {
+                details.Visible = true;
+            }
+            else
+                details.Visible = false;
+        }
     }
 }
