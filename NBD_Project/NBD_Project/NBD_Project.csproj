@@ -165,7 +165,6 @@
     </Compile>
     <Compile Include="DesignBudget.aspx.cs">
       <DependentUpon>DesignBudget.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DesignBudget.aspx.designer.cs">
       <DependentUpon>DesignBudget.aspx</DependentUpon>
