@@ -9,6 +9,72 @@
         #NavMenu {
             width: 250px;
         }
+        .auto-style1 {
+            width: 756px;
+        }
+        .auto-style4 {
+            width: 54px;
+        }
+        .auto-style5 {
+            width: 151px;
+        }
+        .auto-style6 {
+            font-size: large;
+        }
+        .auto-style7 {
+            width: 170px;
+        }
+        .auto-style8 {
+            width: 151px;
+            text-align: center;
+        }
+        .auto-style9 {
+            width: 170px;
+            text-align: right;
+        }
+        .auto-style10 {
+            width: 100%;
+        }
+        .auto-style11 {
+            text-align: right;
+        }
+        .auto-style12 {
+            width: 731px;
+        }
+        .auto-style17 {
+            width: 145px;
+        }
+        .auto-style18 {
+            width: 146px;
+        }
+        .auto-style19 {
+            width: 145px;
+            height: 23px;
+            text-align: right;
+        }
+        .auto-style20 {
+            width: 146px;
+            height: 23px;
+        }
+        .auto-style21 {
+            width: 145px;
+            text-align: right;
+        }
+        .auto-style22 {
+            width: 146px;
+            text-align: right;
+        }
+        .auto-style23 {
+            font-size: large;
+            text-decoration: underline;
+        }
+        .auto-style24 {
+            width: 200px;
+        }
+        .auto-style25 {
+            width: 200px;
+            text-align: right;
+        }
     </style>
 </head>
 <body style="height: 200px">
@@ -67,43 +133,197 @@
             <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
             <br />
             <br />
+        </div>
+        <div>
+
+            <table class="auto-style10">
+                <tr>
+                    <td class="auto-style11">
+                        <asp:Button ID="btnCreate" runat="server" Text="Create New Client" OnClick="btnCreate_Click" />
+                    </td>
+                </tr>
+            </table>
+
+        </div>
+        <div id="createDiv" runat="server">
+
+            <table class="auto-style12">
+                <tr>
+                    <td class="auto-style23" colspan="5"><strong>Create New Client</strong></td>
+                </tr>
+                <tr>
+                    <td class="auto-style17">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style21"><strong>Client Name:</strong></td>
+                    <td colspan="2">
+                        <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style19"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style20"></td>
+                    <td class="auto-style20"></td>
+                </tr>
+                <tr>
+                    <td class="auto-style21"><strong>Address:</strong></td>
+                    <td class="auto-style18">
+                        <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style22"><strong>City:</strong></td>
+                    <td class="auto-style18">
+                        <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style21">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style22"><strong></strong></td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style21"><strong>Province:</strong></td>
+                    <td class="auto-style18">
+                        <asp:DropDownList ID="DropDownList1" runat="server">
+                            <asp:ListItem Value="0">Select a Province</asp:ListItem>
+                            <asp:ListItem>Ontario</asp:ListItem>
+                            <asp:ListItem>Quebec</asp:ListItem>
+                            <asp:ListItem>Manitoba</asp:ListItem>
+                            <asp:ListItem>etc...</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style22"><strong>Postal Code:</strong></td>
+                    <td class="auto-style18">
+                        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style17"><strong></strong></td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style21"><strong>Telephone Number:</strong></td>
+                    <td class="auto-style18">
+                        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style17">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style18">&nbsp;</td>
+                    <td class="auto-style22">
+                        <asp:Button ID="btnCreateClient" runat="server" OnClick="btnCreateClient_Click" Text="Create Client" />
+                    </td>
+                </tr>
+            </table>
+            <br />
             <br />
         </div>
-        Search for Client<br />
-        <br />
-        <div>
-            Name:&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtName" runat="server" Height="16px" Width="200px"></asp:TextBox>
-            <br />
-            <br />
-            Bid:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:DropDownList ID="ddlBid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlBid_SelectedIndexChanged" Width="90px">
+        <div id="searchDiv" runat="server">
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style6" colspan="4"><strong>Search for Client</strong></td>
+                    <td class="auto-style6">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style24">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>Name:</strong></td>
+                    <td class="auto-style5">
+            <asp:TextBox ID="txtName" runat="server" Height="16px" Width="145px"></asp:TextBox>
+                    </td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style24">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style24">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>Bid:</strong></td>
+                    <td class="auto-style8">
+            <asp:DropDownList ID="ddlBid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlBid_SelectedIndexChanged" Width="100px">
                 <asp:ListItem>&gt;</asp:ListItem>
                 <asp:ListItem>&lt;</asp:ListItem>
                 <asp:ListItem>Between</asp:ListItem>
             </asp:DropDownList>
-&nbsp;&nbsp;
+                    </td>
+                    <td class="auto-style5">
             <asp:TextBox ID="txtBid1" runat="server">$</asp:TextBox>
-&nbsp;
+                    </td>
+                    <td class="auto-style24">
             <asp:Label ID="lblAnd" runat="server" Text="and" Visible="False"></asp:Label>
-&nbsp;&nbsp;
+                        &nbsp;
             <asp:TextBox ID="txtBid2" runat="server" Visible="False">$</asp:TextBox>
-            <br />
-            <br />
-            Date:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Between&nbsp;
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style24">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4"><strong>Date:</strong></td>
+                    <td class="auto-style8">Between</td>
+                    <td class="auto-style5">
             <asp:TextBox ID="txtDateStart" runat="server"></asp:TextBox>
-&nbsp; and&nbsp;
+                    </td>
+                    <td class="auto-style24">and&nbsp;&nbsp;
             <asp:TextBox ID="txtDateEnd" runat="server"></asp:TextBox>
+                    </td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style24">&nbsp;</td>
+                    <td class="auto-style7">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style5">&nbsp;</td>
+                    <td class="auto-style25">&nbsp;</td>
+                    <td class="auto-style9">
+            <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" />
+                    </td>
+                </tr>
+            </table>
             <br />
             <br />
-            <asp:Button ID="btnSearch" runat="server" Text="Search" />
-            <br />
-            <br />
-            <br />
-        </div>
-        <div>
             <p>Results</p>
-            <p>Results go here</p>
+            <p>*Results go here*</p>
         </div>
     </form>
 </body>

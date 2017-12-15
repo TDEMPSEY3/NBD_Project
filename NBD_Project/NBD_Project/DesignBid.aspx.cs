@@ -16,6 +16,8 @@ namespace NBD_Project
                 Response.Redirect("~/LogIn.aspx");
             else
                 lblWelcome.Text += " " + User.Identity.Name;
+
+            bidDiv.Visible = false;
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -25,6 +27,11 @@ namespace NBD_Project
             authenticationManager.SignOut();
 
             Response.Redirect("~/Login.aspx");
+        }
+
+        protected void btnStart_Click(object sender, EventArgs e)
+        {
+            bidDiv.Visible = true;
         }
     }
 }
