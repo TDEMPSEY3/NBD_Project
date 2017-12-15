@@ -26,5 +26,20 @@ namespace NBD_Project
 
             Response.Redirect("~/Login.aspx");
         }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/TeamAssembly.aspx");
+        }
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProjectAdminReport.aspx");
+        }
+
+        protected void LinkButton6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProductionPlan.aspx");
+        }
     }
 }

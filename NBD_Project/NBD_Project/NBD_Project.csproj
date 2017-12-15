@@ -50,9 +50,6 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.1.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Gat.Controls.MessageBox, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\MessageBox.2.1.0\lib\net461\Gat.Controls.MessageBox.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.1\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
     </Reference>
@@ -104,6 +101,9 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
+    <Reference Include="WindowFormExtended, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\WindowFormExtended.1.0.0\lib\WindowFormExtended.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -171,12 +171,14 @@
     </Compile>
     <Compile Include="DesignDailyReport.aspx.cs">
       <DependentUpon>DesignDailyReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DesignDailyReport.aspx.designer.cs">
       <DependentUpon>DesignDailyReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="DesignResultPage.aspx.cs">
       <DependentUpon>DesignResultPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="DesignResultPage.aspx.designer.cs">
       <DependentUpon>DesignResultPage.aspx</DependentUpon>

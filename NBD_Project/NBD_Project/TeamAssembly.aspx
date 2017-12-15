@@ -9,10 +9,31 @@
         #NavMenu {
             width: 250px;
         }
+            .auto-style1 {
+                width: 793px;
+            }
+            .auto-style4 {
+                width: 263px;
+            }
+            .auto-style5 {
+                width: 264px;
+            }
+            .auto-style6 {
+                width: 263px;
+                height: 23px;
+            }
+            .auto-style7 {
+                width: 264px;
+                height: 23px;
+            }
+            .auto-style8 {
+                text-align: center;
+            }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+        <div class="auto-style8">
         <div id="NavMenu">
             <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
             <p>
@@ -67,7 +88,149 @@
             <br />
             <br />
         </div>
-        <asp:Label ID="Label1" runat="server" Text="TEAM ASSEMBLY PAGE UNDER CONSTRUCTION"></asp:Label>
+        <div>
+            <table class="auto-style1">
+                <tr>
+                    <td class="auto-style4">Choose a project</td>
+                    <td class="auto-style5">Choose a worker</td>
+                    <td class="auto-style5">Choose a role</td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">
+                        <asp:DropDownList ID="DropDownList1" runat="server" Height="16px" Width="253px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Niagara College</asp:ListItem>
+                            <asp:ListItem>Homescape Hotel</asp:ListItem>
+                            <asp:ListItem>Brock University</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList2" runat="server" Height="17px" Width="258px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Gary Brody</asp:ListItem>
+                            <asp:ListItem>Nola Darling</asp:ListItem>
+                            <asp:ListItem>Gustin Dumphry</asp:ListItem>
+                            <asp:ListItem>Tristan Dempsey</asp:ListItem>
+                            <asp:ListItem>Yen Drenchfeet</asp:ListItem>
+                            <asp:ListItem>Torika Feaste</asp:ListItem>
+                            <asp:ListItem>Patty Ferguson</asp:ListItem>
+                            <asp:ListItem>Gabriel Rahming</asp:ListItem>
+                            <asp:ListItem>Jake Rocero</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList3" runat="server" Height="16px" Width="261px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Sales Associate</asp:ListItem>
+                            <asp:ListItem>Designer</asp:ListItem>
+                            <asp:ListItem>Production</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style6"></td>
+                    <td class="auto-style7">
+                        <asp:DropDownList ID="DropDownList4" runat="server" Height="17px" Width="258px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Gary Brody</asp:ListItem>
+                            <asp:ListItem>Nola Darling</asp:ListItem>
+                            <asp:ListItem>Gustin Dumphry</asp:ListItem>
+                            <asp:ListItem>Tristan Dempsey</asp:ListItem>
+                            <asp:ListItem>Yen Drenchfeet</asp:ListItem>
+                            <asp:ListItem>Torika Feaste</asp:ListItem>
+                            <asp:ListItem>Patty Ferguson</asp:ListItem>
+                            <asp:ListItem>Gabriel Rahming</asp:ListItem>
+                            <asp:ListItem>Jake Rocero</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style7">
+                        <asp:DropDownList ID="DropDownList12" runat="server" Height="16px" Width="261px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Sales Associate</asp:ListItem>
+                            <asp:ListItem>Designer</asp:ListItem>
+                            <asp:ListItem>Production</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList5" runat="server" Height="17px" Width="258px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Gary Brody</asp:ListItem>
+                            <asp:ListItem>Nola Darling</asp:ListItem>
+                            <asp:ListItem>Gustin Dumphry</asp:ListItem>
+                            <asp:ListItem>Tristan Dempsey</asp:ListItem>
+                            <asp:ListItem>Yen Drenchfeet</asp:ListItem>
+                            <asp:ListItem>Torika Feaste</asp:ListItem>
+                            <asp:ListItem>Patty Ferguson</asp:ListItem>
+                            <asp:ListItem>Gabriel Rahming</asp:ListItem>
+                            <asp:ListItem>Jake Rocero</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList13" runat="server" Height="16px" Width="261px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Sales Associate</asp:ListItem>
+                            <asp:ListItem>Designer</asp:ListItem>
+                            <asp:ListItem>Production</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList10" runat="server" Height="17px" Width="258px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Gary Brody</asp:ListItem>
+                            <asp:ListItem>Nola Darling</asp:ListItem>
+                            <asp:ListItem>Gustin Dumphry</asp:ListItem>
+                            <asp:ListItem>Tristan Dempsey</asp:ListItem>
+                            <asp:ListItem>Yen Drenchfeet</asp:ListItem>
+                            <asp:ListItem>Torika Feaste</asp:ListItem>
+                            <asp:ListItem>Patty Ferguson</asp:ListItem>
+                            <asp:ListItem>Gabriel Rahming</asp:ListItem>
+                            <asp:ListItem>Jake Rocero</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList14" runat="server" Height="16px" Width="261px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Sales Associate</asp:ListItem>
+                            <asp:ListItem>Designer</asp:ListItem>
+                            <asp:ListItem>Production</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList11" runat="server" Height="17px" Width="258px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Gary Brody</asp:ListItem>
+                            <asp:ListItem>Nola Darling</asp:ListItem>
+                            <asp:ListItem>Gustin Dumphry</asp:ListItem>
+                            <asp:ListItem>Tristan Dempsey</asp:ListItem>
+                            <asp:ListItem>Yen Drenchfeet</asp:ListItem>
+                            <asp:ListItem>Torika Feaste</asp:ListItem>
+                            <asp:ListItem>Patty Ferguson</asp:ListItem>
+                            <asp:ListItem>Gabriel Rahming</asp:ListItem>
+                            <asp:ListItem>Jake Rocero</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                    <td class="auto-style5">
+                        <asp:DropDownList ID="DropDownList15" runat="server" Height="16px" Width="261px">
+                            <asp:ListItem Selected="True">Select...</asp:ListItem>
+                            <asp:ListItem>Sales Associate</asp:ListItem>
+                            <asp:ListItem>Designer</asp:ListItem>
+                            <asp:ListItem>Production</asp:ListItem>
+                        </asp:DropDownList>
+                    </td>
+                </tr>
+            </table>
+            </div>
+            <asp:Button ID="Button1" runat="server" Text="Create Team" />
+        </div>
     </form>
 </body>
 </html>
