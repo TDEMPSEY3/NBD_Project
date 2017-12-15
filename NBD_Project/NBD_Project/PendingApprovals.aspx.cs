@@ -16,6 +16,8 @@ namespace NBD_Project
                 Response.Redirect("~/LogIn.aspx");
             else
                 lblWelcome.Text += " " + User.Identity.Name;
+
+            details.Visible = false;
         }
 
         protected void btnLogout_Click(object sender, EventArgs e)
@@ -27,14 +29,19 @@ namespace NBD_Project
             Response.Redirect("~/Login.aspx");
         }
 
-        protected void BtnVwDtls_Click(object sender, EventArgs e)
+        protected void Button1_Click(object sender, EventArgs e)
         {
-            if (details.Visible == false)
-            {
-                details.Visible = true;
-            }
-            else
-                details.Visible = false;
+            details.Visible = true;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            details.Visible = true;
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            details.Visible = true;
         }
     }
 }

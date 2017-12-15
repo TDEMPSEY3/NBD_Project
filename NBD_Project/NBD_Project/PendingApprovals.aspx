@@ -128,7 +128,7 @@
                     <td class="auto-style7">SJSU</td>
                     <td class="auto-style7">Design Bid</td>
                     <td class="auto-style7">
-                        <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" />
+                        <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" OnClick="Button1_Click" />
                     </td>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
@@ -137,7 +137,7 @@
                     <td class="auto-style7">LS Mall</td>
                     <td class="auto-style7">Production Plan</td>
                     <td class="auto-style7">
-                        <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" />
+                        <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" OnClick="Button2_Click" />
                     </td>
                     <td class="auto-style7">&nbsp;</td>
                     <td class="auto-style8">&nbsp;</td>
@@ -153,7 +153,7 @@
                 </tr>
             </table>
         </div>
-        <div runat="server" id="details" hidden="hidden">
+        <div runat="server" id="details">
 
             <table class="auto-style9">
                 <tr>
