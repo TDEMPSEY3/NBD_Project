@@ -135,6 +135,9 @@
     <Content Include="ClientPage.aspx" />
     <Content Include="ReportPage.aspx" />
     <Content Include="PDRResults.aspx" />
+    <Content Include="Scripts\jquery-3.2.1.min.js" />
+    <Content Include="Scripts\jquery-ui.js" />
+    <Content Include="Styles\jquery-ui.css" />
     <Content Include="TeamAssembly.aspx" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
