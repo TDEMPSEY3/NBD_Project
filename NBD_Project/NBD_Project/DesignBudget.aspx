@@ -13,7 +13,7 @@
                 width: 100%;
             }
             .auto-style3 {
-                border: 3px solid #000000;
+                border: 3px solid #266F26;
                 padding: 1px 4px;
             }
             .auto-style4 {
@@ -68,6 +68,7 @@
             }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -135,8 +136,9 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Design Budget</h1>
             <div class="auto-style1">
-                <strong>Design Budget</strong>
+                
             </div>
             <div>
                 Client

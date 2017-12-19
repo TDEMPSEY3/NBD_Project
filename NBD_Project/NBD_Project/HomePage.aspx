@@ -14,6 +14,7 @@
         }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -82,6 +83,7 @@
         <br /><br />
         
         <div id="mainDiv">
+            <h1>Home</h1>
             <div style="height: 191px"><strong><em>Announcements<br />
                 </em></strong><br />Client #2356 has requested a meeting for rescheduling and readjusting for project #456987<br />
                 <br />

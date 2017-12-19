@@ -36,6 +36,7 @@
             }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -103,6 +104,7 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Design Bid</h1>
             <div>
                 <table class="auto-style12">
                     <tr>
@@ -115,7 +117,7 @@
                             </asp:DropDownList>
                         </td>
                         <td class="auto-style16">
-                            <asp:Button ID="btnStart" runat="server" OnClick="btnStart_Click" Text="Start Design Bid" />
+                            <asp:Button ID="btnStart" runat="server" OnClick="btnStart_Click" Text="Start Design Bid" CssClass="button" />
                         </td>
                     </tr>
                 </table>
@@ -300,7 +302,7 @@
                             <asp:TextBox ID="TextBox41" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style11">
-                            <asp:Button ID="btnAddPlant" runat="server" Text="Add" />
+                            <asp:Button ID="btnAddPlant" runat="server" Text="Add" CssClass="addbutton" />
                         </td>
                     </tr>
                     <tr>
@@ -354,7 +356,7 @@
                             <asp:TextBox ID="TextBox32" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style11">
-                            <asp:Button ID="btnAddPottery" runat="server" Text="Add" />
+                            <asp:Button ID="btnAddPottery" runat="server" Text="Add" CssClass="addbutton"/>
                         </td>
                     </tr>
                     <tr>
@@ -408,7 +410,7 @@
                             <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style11">
-                            <asp:Button ID="btnAddMaterial" runat="server" Text="Add" />
+                            <asp:Button ID="btnAddMaterial" runat="server" Text="Add" CssClass="addbutton"/>
                         </td>
                     </tr>
                     <tr>
@@ -475,7 +477,7 @@
                             <asp:TextBox ID="TextBox12" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style11">
-                            <asp:Button ID="btnAddLabor" runat="server" Text="Add" />
+                            <asp:Button ID="btnAddLabor" runat="server" Text="Add" CssClass="addbutton"/>
                         </td>
                     </tr>
                 </table>

@@ -73,7 +73,9 @@
             text-align: right;
         }
     </style>
-    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
+
 </head>
 <body style="height: 200px">
     <form id="form1" runat="server">
@@ -142,13 +144,14 @@
         </div>       
         
         <div id="mainDiv">
+            <h1>Client</h1>
             <div>
                 <table class="auto-style10">
                     <tr>
                         <td class="auto-style11">
                             <br />
                             <br />
-                            <asp:Button ID="btnCreate" runat="server" Text="Create New Client" OnClick="btnCreate_Click" Height="30px" />
+                            <asp:Button ID="btnCreate" runat="server" Text="Create New Client" OnClick="btnCreate_Click" Height="51px" CssClass="button" />
                         </td>
                     </tr>
                 </table>
@@ -239,7 +242,7 @@
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style22">
-                            <asp:Button ID="btnCreateClient" runat="server" OnClick="btnCreateClient_Click" Text="Create Client" />
+                            <asp:Button ID="btnCreateClient" runat="server" OnClick="btnCreateClient_Click" Text="Create Client" CssClass="button" />
                         </td>
                     </tr>
                 </table>
@@ -325,14 +328,13 @@
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style25">&nbsp;</td>
                         <td class="auto-style9">
-                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" />
+                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" CssClass="button" />
                         </td>
                     </tr>
                 </table>
                 <br />
                 <br />
-                <p>Results</p>
-                <p>*Results go here*</p>
+               
             </div>
         </div>
     </form>

@@ -6,6 +6,7 @@
 <head runat="server">
     <title>Administrator</title>    
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -72,6 +73,7 @@
         </div>        
 
         <div id="mainDiv">
+            <h1>Administrator</h1>
             <div style="height: 114px; margin-top: 0px;"><strong><em>Pending Approvals</em></strong><br />
                 <asp:LinkButton ID="LinkButton1" runat="server">View</asp:LinkButton>
                     &nbsp;&nbsp; Design Bid #4256789<br />

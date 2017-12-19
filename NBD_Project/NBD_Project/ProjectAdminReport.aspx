@@ -25,6 +25,7 @@
             }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -92,9 +93,10 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Project Administrator Report</h1>
             <div>
                 <table class="auto-style1">
-                    <tr>
+                    <tr
                         <td class="auto-style5" colspan="3"><strong>Create new Project Administrator Report</strong></td>
                     </tr>
                     <tr>
@@ -113,7 +115,7 @@
                         <td class="auto-style4">&nbsp;</td>
                         <td class="auto-style3">&nbsp;</td>
                         <td class="auto-style6">
-                            <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="100px" />
+                            <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="165px" CssClass="button" />
                         </td>
                     </tr>
                 </table>

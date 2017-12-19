@@ -7,19 +7,19 @@
     <title></title>
     <style type="text/css">
         .auto-style1 {
-            text-align: right;
+            text-align: center;
             width: 156px;
         }
-        .auto-style2 {
-            font-size: xx-large;
-        }
+        
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
-<body>
+<body class="center">
     <form id="form1" runat="server">
     <div>
     
-        <span class="auto-style2">Login</span><br />
+        <h1><span>Login</span></h1><br />
         <br />
         <table style="width: 42%;">
             <tr>
@@ -36,16 +36,17 @@
             </tr>
         </table>
         <br />
-        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" />
-        <asp:Button ID="btnRegister" runat="server" CausesValidation="False" Text="Register" OnClick="btnRegister_Click" />
+        <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click" CssClass="button" />
+        <asp:Button ID="btnRegister" runat="server" CausesValidation="False" Text="Register" OnClick="btnRegister_Click" cssClass="button"/>
         <br />
         <br />
         <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>
         <br />
+        <div>
         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUser" ErrorMessage="Username is required" ForeColor="Red"></asp:RequiredFieldValidator>
         <br />
         <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPass" ErrorMessage="Password is required" ForeColor="Red"></asp:RequiredFieldValidator>
-    
+    </div>
     </div>
     </form>
 </body>

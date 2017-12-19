@@ -44,6 +44,7 @@
         }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -110,10 +111,11 @@
         </div>        
 
         <div id="mainDiv">
+            <h1>Design Daily Work Report</h1>
             <div class="auto-style50">
                 <table class="auto-style1">
                     <tr>
-                        <td class="auto-style51" colspan="5"><strong>Designer Daily Work Report</strong></td>
+                       
                         <td class="auto-style51">&nbsp;</td>
                     </tr>
                     <tr>
@@ -167,7 +169,7 @@
                             <asp:TextBox ID="txtTask" runat="server" Width="437px"></asp:TextBox>
                         </td>
                         <td class="auto-style10">
-                            <asp:Button ID="btnAdd" runat="server" Text="Add" />
+                            <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="addbutton"/>
                         </td>
                     </tr>
                     <tr>
@@ -179,7 +181,7 @@
                         <td class="auto-style31">&nbsp;</td>
                     </tr>
                     </table>
-                <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" OnClick="Button2_Click" Width="100px" />
+                <asp:Button ID="Button2" runat="server" Text="Create" style="text-align: right" OnClick="Button2_Click" Width="100px" CssClass="button" />
               </div>
         </div>
     </form>

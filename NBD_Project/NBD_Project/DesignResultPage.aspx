@@ -100,6 +100,7 @@
         }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -140,6 +141,7 @@
             <p>
                 <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
             </p>
+              <a href="DesignResultPage.aspx">DesignResultPage.aspx</a>
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx">Pending Approvals</asp:HyperLink>
             </div>
@@ -169,6 +171,7 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Results</h1>
             <div class="auto-style22">
                 <table class="auto-style1">
                     <tr>

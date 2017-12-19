@@ -28,7 +28,9 @@
             }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
+    
 <body>
     <form id="form1" runat="server">
         <div id="NavMenu">
@@ -94,6 +96,7 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Team Assembly</h1>
             <div>
                 <table class="auto-style1">
                     <tr>
@@ -234,7 +237,7 @@
                         </td>
                     </tr>
                 </table>
-                <asp:Button ID="Button1" runat="server" Text="Create Team" />
+                <asp:Button ID="BtnCreateTeam" runat="server" Text="Create Team" CssClass="button"/>
             </div>
         </div>
     </form>
