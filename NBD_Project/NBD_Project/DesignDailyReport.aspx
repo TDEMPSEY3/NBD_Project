@@ -5,6 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Create Design Daily Report</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function ()  
+        {  
+            $('#txtDatePicker').datepicker(  
+            {  
+                dateFormat: 'dd/mm/yy',  
+                changeMonth: true,  
+                changeYear: true,  
+                yearRange: '1950:2100'  
+            });  
+        })  
+    </script>  
     <style type="text/css">
         .auto-style50 {
             height: 343px;
@@ -113,7 +128,7 @@
                         <td>Date:&nbsp;
                         </td>
                         <td class="auto-style47">
-                            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtDatePicker" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style39"></td>
                         <td class="auto-style42"></td>
@@ -140,16 +155,16 @@
                         <td class="auto-style49">
                             &nbsp;</td>
                         <td class="auto-style47">
-                            <asp:TextBox ID="TextBox1" runat="server" Width="260px"></asp:TextBox>
+                            <asp:TextBox ID="txtProject" runat="server" Width="260px"></asp:TextBox>
                         </td>
                         <td class="auto-style39">
-                            <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtStage" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style42">
-                            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:TextBox ID="txtHours" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style10">
-                            <asp:TextBox ID="TextBox4" runat="server" Width="437px"></asp:TextBox>
+                            <asp:TextBox ID="txtTask" runat="server" Width="437px"></asp:TextBox>
                         </td>
                         <td class="auto-style10">
                             <asp:Button ID="btnAdd" runat="server" Text="Add" />
