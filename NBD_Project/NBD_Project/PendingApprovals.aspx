@@ -50,6 +50,7 @@
             }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -118,7 +119,7 @@
         
         <div id="mainDiv">
             <div class="auto-style1">
-                Pending Approvals
+                <h1>Pending Approvals</h1>
                 <br />
             </div>
             <div>
@@ -134,7 +135,7 @@
                         <td class="auto-style7">SJSU</td>
                         <td class="auto-style7">Design Bid</td>
                         <td class="auto-style7">
-                            <asp:Button ID="Button1" runat="server" Text="View Details" Width="100px" OnClick="Button1_Click" />
+                            <asp:Button ID="Button1" runat="server" Text="View Details" Width="163px" OnClick="Button1_Click" CssClass="addbutton" />
                         </td>
                         <td class="auto-style7">&nbsp;</td>
                         <td class="auto-style8">&nbsp;</td>
@@ -143,7 +144,7 @@
                         <td class="auto-style7">LS Mall</td>
                         <td class="auto-style7">Production Plan</td>
                         <td class="auto-style7">
-                            <asp:Button ID="Button2" runat="server" Text="View Details" Width="100px" OnClick="Button2_Click" />
+                            <asp:Button ID="Button2" runat="server" Text="View Details" Width="162px" OnClick="Button2_Click" CssClass="addbutton" />
                         </td>
                         <td class="auto-style7">&nbsp;</td>
                         <td class="auto-style8">&nbsp;</td>
@@ -152,7 +153,7 @@
                         <td class="auto-style7">Fremont</td>
                         <td class="auto-style7">Design Budget</td>
                         <td class="auto-style7">
-                            <asp:Button ID="btnVwDtls" runat="server" Text="View Details" Width="100px" OnClick="Button3_Click" />
+                            <asp:Button ID="btnVwDtls" runat="server" Text="View Details" Width="161px" OnClick="Button3_Click" CssClass="addbutton" />
                         </td>
                         <td class="auto-style7">&nbsp;</td>
                         <td class="auto-style8">&nbsp;</td>

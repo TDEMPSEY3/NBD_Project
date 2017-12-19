@@ -7,7 +7,8 @@
     <title>Create Production Daily Report</title>
     <style type="text/css">
         .auto-style1 {
-            width: 898px;
+            width: 923px;
+            height: 92px;
         }
         .auto-style5 {
             width: 224px;
@@ -40,6 +41,7 @@
         }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -108,6 +110,7 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Procduction Daily Work Report</h1>
             <div style="height: 544px" class="auto-style11">
                 <div class="auto-style12">
                     <strong>Production Daily Report<br />
@@ -123,6 +126,7 @@
                         <td class="auto-style6">Quantity</td>
                         <td class="auto-style6">Unit Cost</td>
                         <td class="auto-style6">Ext. Cost</td>
+                        <td class="auto-style6">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
@@ -137,6 +141,8 @@
                         <td class="auto-style5">
                             <asp:TextBox ID="TextBox4" runat="server" Height="21px" Width="201px"></asp:TextBox>
                         </td>
+                        <td class="auto-style5">
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style5">
@@ -151,10 +157,12 @@
                         <td class="auto-style5">
                             <asp:TextBox ID="TextBox8" runat="server" Height="21px" Width="201px"></asp:TextBox>
                         </td>
+                        <td class="auto-style5">
+                            <asp:Button ID="BtnAdd" runat="server" OnClick="BtnAdd_Click" Text="Add" CssClass="addbutton" />
+                        </td>
                     </tr>
                 </table>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<asp:Button ID="BtnAdd" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
-                <br />
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<br />
                 <asp:Label ID="Label2" runat="server" style="font-weight: 700" Text="Labor"></asp:Label>
                 <br />
                 <table class="auto-style7">
@@ -164,6 +172,7 @@
                         <td class="auto-style10">Cost/Hr</td>
                         <td class="auto-style10">Ext.Cost</td>
                         <td class="auto-style10">Task</td>
+                        <td class="auto-style10">&nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style9">
@@ -181,6 +190,8 @@
                         <td class="auto-style9">
                             <asp:TextBox ID="TextBox21" runat="server"></asp:TextBox>
                         </td>
+                        <td class="auto-style9">
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style9">
@@ -198,6 +209,8 @@
                         <td class="auto-style9">
                             <asp:TextBox ID="TextBox22" runat="server"></asp:TextBox>
                         </td>
+                        <td class="auto-style9">
+                            &nbsp;</td>
                     </tr>
                     <tr>
                         <td class="auto-style9">
@@ -215,13 +228,15 @@
                         <td class="auto-style9">
                             <asp:TextBox ID="TextBox23" runat="server"></asp:TextBox>
                         </td>
+                        <td class="auto-style9">
+                <asp:Button ID="BtnAdd2" runat="server" OnClick="BtnAdd_Click" Text="Add" CssClass="addbutton"/>
+                        </td>
                     </tr>
                 </table>
                 <br />
-                <asp:Button ID="BtnAdd2" runat="server" OnClick="BtnAdd_Click" style="margin-bottom: 23px" Text="Add" />
               </div>
-              <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" />
-              <asp:Button ID="btnExit" runat="server" OnClick="btnExit_Click" Text="Exit" />
+              <asp:Button ID="btnSave" runat="server" Text="Save" OnClick="btnSave_Click" CssClass="button" />
+              <asp:Button ID="btnExit" runat="server" OnClick="btnExit_Click" Text="Exit" CssClass="button"/>
         </div>
     </form>
 </body>

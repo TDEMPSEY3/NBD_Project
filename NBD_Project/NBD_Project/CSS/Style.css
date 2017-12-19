@@ -1,20 +1,79 @@
 ﻿body {
+    font-family: 'Raleway', sans-serif;
+    font-size: medium;
+    color: #266F26;
+    background: #B7FDB7;
+}
 
+
+h1 {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    font-size:50px;
+    font-weight: 300;
 }
 
 #NavMenu {
     float: left;
     width: 15%;
-    background-color: #7FB944;
-    padding: 10px;
+    padding: 5px;
+   
 }
 
-#welcome {
+
+ 
+
+#welcome 
+{
     float:right;
 }
 
-#mainDiv {
+#mainDiv 
+{
     float: right;
     width: 82%;
     padding: 10px;
 }
+
+
+.center {
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    
+ 
+}
+
+.button {
+    padding: 15px 30px;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFF;
+    background: #266F26;
+    text-align:center;
+}
+
+ .button:hover 
+ {
+        background: #00DE00;
+ }
+
+.addbutton {
+    padding: 5px,5px;
+    border: none;
+    font-size: 1em;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFF;
+    background: #266F26;
+    text-align: center;
+}
+
+.addbutton:hover {
+    background: #00DE00;
+    
+}
+

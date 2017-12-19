@@ -33,8 +33,10 @@
                 height: 23px;
                 font-size: large;
             }
+
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -104,6 +106,7 @@
         </div>
         
         <div id="mainDiv">
+            <h1>Client Information</h1>
             <div>
                 Design Bid<br />
                 <br />
