@@ -5,6 +5,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Create Design Budget</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function ()  
+        {  
+            $('#txtClientDate').datepicker(  
+            {  
+                dateFormat: 'dd/mm/yy',  
+                changeMonth: true,  
+                changeYear: true,  
+                yearRange: '1950:2100'  
+            });  
+        })  
+        $(function () {
+            $('#txtProjDateBegin').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+        $(function () {
+            $('#txtProjDateCompl').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+        $(function () {
+            $('#txtDesignDate1').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })
+        $(function () {
+            $('#txtDesignDate2').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+    </script>  
         <style type="text/css">
             .auto-style1 {
                 text-align: center;
@@ -174,7 +225,7 @@
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Contact Date:</td>
                                     <td>
-                                        <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtClientDate" runat="server" Width="200px"></asp:TextBox>
                                     </td>
                                 </tr>
                             </table>
@@ -235,7 +286,7 @@
                                 <tr>
                                     <td class="auto-style4">Est Begin Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox12" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateBegin" runat="server" Width="200px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Bid Amount:</td>
@@ -246,7 +297,7 @@
                                 <tr>
                                     <td class="auto-style4">Est Compl Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox19" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateCompl" runat="server" Width="200px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">&nbsp;</td>
@@ -288,7 +339,7 @@
                                         <asp:TextBox ID="TextBox20" runat="server" Width="510px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style11">
-                                        <asp:TextBox ID="TextBox21" runat="server" Width="100px"></asp:TextBox>
+                                        <asp:TextBox ID="txtDesignDate1" runat="server" Width="100px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style10">
                                         <asp:TextBox ID="TextBox22" runat="server" Width="100px"></asp:TextBox>
@@ -311,7 +362,7 @@
                                         <asp:TextBox ID="TextBox25" runat="server" Width="510px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style11">
-                                        <asp:TextBox ID="TextBox24" runat="server" Width="100px"></asp:TextBox>
+                                        <asp:TextBox ID="txtDesignDate2" runat="server" Width="100px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style10">&nbsp;</td>
                                     <td class="auto-style1">

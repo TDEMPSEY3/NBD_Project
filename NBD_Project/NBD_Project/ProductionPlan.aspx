@@ -5,6 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Create Production Plan</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function () {
+            $('#txtProjDateBegin').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+        $(function () {
+            $('#txtProjDateCompl').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+    </script>  
         <style type="text/css">
             .auto-style1 {
                 text-align: center;
@@ -183,7 +206,7 @@
                                 <tr>
                                     <td class="auto-style4">Begin Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateBegin" runat="server" Width="200px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Bid Amount:</td>
@@ -194,7 +217,7 @@
                                 <tr>
                                     <td class="auto-style4">Compl Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateCompl" runat="server" Width="200px"></asp:TextBox>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">&nbsp;</td>
