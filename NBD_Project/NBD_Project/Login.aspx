@@ -5,13 +5,6 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-            width: 156px;
-        }
-        
-    </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
@@ -19,19 +12,17 @@
     <form id="form1" runat="server">
     <div>
     
-        <h1><span>Login</span></h1><br />
+        <h1><span>Natural By Design</span></h1><br />
         <br />
-        <table style="width: 42%;">
+        <table style="width: 100%">
             <tr>
-                <td class="auto-style1">Username:</td>
-                <td>
-                    <asp:TextBox ID="txtUser" runat="server"></asp:TextBox>
+                <td>Username:
+                    <asp:TextBox ID="txtUser" runat="server" BackColor="#8FBC8F" BorderColor="#266F26" Height="20px" Width="175px"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td class="auto-style1">Password:</td>
-                <td>
-                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password"></asp:TextBox>
+                <td>Password:&nbsp;
+                    <asp:TextBox ID="txtPass" runat="server" TextMode="Password" BackColor="#8FBC8F" BorderColor="#266F26" Height="20px" Width="175px"></asp:TextBox>
                 </td>
             </tr>
         </table>
