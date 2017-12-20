@@ -77,8 +77,11 @@ h1 {
     
 }
 
-.link
-{
-    text-decoration: none;
+.link {
+    color: #3D9B3D;
 }
+
+    .link:visited {
+        color: #105510;
+    }
 

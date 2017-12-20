@@ -6,9 +6,6 @@
 <head runat="server">
     <title>Create Production Plan</title>
         <style type="text/css">
-            .auto-style1 {
-                text-align: center;
-            }
             .auto-style2 {
                 width: 100%;
             }
@@ -91,13 +88,16 @@
             .auto-style24 {
                 width: 50px;
             }
+            .auto-style25 {
+                margin-left: 0px;
+            }
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
      <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
-    <form id="form1" runat="server">
-       <div id="NavMenu">
+    <form id="form1" runat="server" class="auto-style25">
+       <div id="NavMenu" class="auto-style25">
             <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
             <p>
                 <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx">Client</asp:HyperLink>
