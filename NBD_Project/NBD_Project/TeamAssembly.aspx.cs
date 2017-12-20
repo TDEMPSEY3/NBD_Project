@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows.Input;
+
 
 namespace NBD_Project
 {
@@ -15,16 +17,24 @@ namespace NBD_Project
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
             else
-                lblWelcome.Text += " " + User.Identity.Name;
+            {
+                if (!IsPostBack)
+                    lblWelcome.Text += " " + User.Identity.Name;
+            }
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void lnkLogout_Click(object sender, EventArgs e)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
 
             authenticationManager.SignOut();
 
             Response.Redirect("~/Login.aspx");
+        }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/TeamAssembly.aspx");
         }
     }
 }

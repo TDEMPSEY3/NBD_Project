@@ -15,16 +15,34 @@ namespace NBD_Project
             if (!User.Identity.IsAuthenticated)
                 Response.Redirect("~/LogIn.aspx");
             else
-                lblWelcome.Text += " " + User.Identity.Name;
+            {
+                if (!IsPostBack)
+                    lblWelcome.Text += " " + User.Identity.Name;
+            }
         }
 
-        protected void btnLogout_Click(object sender, EventArgs e)
+        protected void lnkLogout_Click(object sender, EventArgs e)
         {
             var authenticationManager = HttpContext.Current.GetOwinContext().Authentication;
 
             authenticationManager.SignOut();
 
             Response.Redirect("~/Login.aspx");
+        }
+
+        protected void LinkButton4_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/TeamAssembly.aspx");
+        }
+
+        protected void LinkButton5_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProjectAdminReport.aspx");
+        }
+
+        protected void LinkButton6_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/ProductionPlan.aspx");
         }
     }
 }

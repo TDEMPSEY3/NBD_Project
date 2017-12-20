@@ -14,12 +14,14 @@
             font-size: xx-large;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
-<body>
+<body class="center">
     <form id="form1" runat="server">
     <div style="height: 310px">
-    
-        <strong><span class="auto-style2">Register New User</span></strong><br />
+    <h1>Register New User</h1>
+        
         <table style="width: 42%;">
             <tr>
                 <td class="auto-style1">Username:</td>
@@ -41,7 +43,7 @@
             </tr>
         </table>
         <br />
-        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
+        <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" CssClass="button" />
         <br />
         <br />
         <asp:Label ID="lblMessage" runat="server" ForeColor="Red"></asp:Label>

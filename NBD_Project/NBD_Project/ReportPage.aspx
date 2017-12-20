@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Reports</title>
     <style type="text/css">
         .auto-style1 {
             width: 756px;
@@ -27,136 +27,148 @@
             font-size: x-large;
         }
     </style>
+    <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="NavMenu">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
-                <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx">Client Information</asp:HyperLink>
+                <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
-                <asp:HyperLink ID="DBidLink" runat="server" href="DesignBid.aspx">Design Bid</asp:HyperLink>
+                <asp:HyperLink ID="DBidLink" runat="server" href="DesignBid.aspx" CssClass="link">Design Bid</asp:HyperLink>
             </div>
             <p style="margin-left: 40px">
-                <asp:HyperLink ID="DBudgetLink" runat="server" href="DesignBudget.aspx">Design Budget</asp:HyperLink>
+                <asp:HyperLink ID="DBudgetLink" runat="server" href="DesignBudget.aspx" CssClass="link">Design Budget</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
-                <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx">Production Plan</asp:HyperLink>
+                <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
             </p>
            
             <div style="margin-left: 40px">
                 <p>
-                <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx">Design Daily Report</asp:HyperLink>
+                <asp:HyperLink ID="DDReportLink" runat="server" href="DesignDailyReport.aspx" CssClass="link">Design Daily Report</asp:HyperLink>
                 <br />
                 </p>
                 </div>
                         
             <div style="margin-left: 40px">
                 <p>
-                <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx">Production Daily Report</asp:HyperLink>
+                <asp:HyperLink ID="PDReportLink" runat="server" href="ProductionDailyReport.aspx" CssClass="link">Production Daily Report</asp:HyperLink>
                     </p>
             </div>
 
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
-                <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx">Pending Approvals</asp:HyperLink>
+                <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx" CssClass="link">Pending Approvals</asp:HyperLink>
             </div>
             <p style="margin-left: 40px">
-                <asp:HyperLink ID="TAssemblyLink" runat="server" href="TeamAssembly.aspx">Team Assembly</asp:HyperLink>
+                <asp:HyperLink ID="TAssemblyLink" runat="server" href="TeamAssembly.aspx" CssClass="link">Team Assembly</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
-                <asp:HyperLink ID="PAdminReportLink" runat="server" href="ProjectAdminReport.aspx">Project Administrator Report</asp:HyperLink>
+                <asp:HyperLink ID="PAdminReportLink" runat="server" href="ProjectAdminReport.aspx" CssClass="link">Project Administrator Report</asp:HyperLink>
             </div>
             <p>&nbsp;</p>
         </div>
-        <div id ="welcome">
-            <asp:Label ID="lblWelcome" runat="server" Text="Welcome"></asp:Label>
-        &nbsp;<br />
-            <asp:Button ID="btnLogout" runat="server" OnClick="btnLogout_Click" Text="Logout" />
-            <br />
+        
+        <div id="welcome" style="height: 24px">   
+            <table style="width:100%;">
+                <tr>
+                    <td>
+                        &nbsp;</td>
+                    <td style="text-align: right">
+                        <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
+                        <br />
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                    </td>
+                </tr>
+            </table>    
             <br />
         </div>
-        <div>
-
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style9" colspan="5"><strong>Search for Report</strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Report type:</strong></td>
-                    <td colspan="2">
-                        <asp:RadioButtonList ID="RadioButtonList1" runat="server">
-                            <asp:ListItem Selected="True">Production Daily Report</asp:ListItem>
-                            <asp:ListItem>Designer Daily Report</asp:ListItem>
-                        </asp:RadioButtonList>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Project:</strong></td>
-                    <td class="auto-style5">
-                        <asp:DropDownList ID="ddlProject" runat="server" Width="148px">
-                            <asp:ListItem Value="0">Select a project</asp:ListItem>
-                            <asp:ListItem>Project 1</asp:ListItem>
-                            <asp:ListItem>Project 2</asp:ListItem>
-                            <asp:ListItem>Project 3</asp:ListItem>
-                        </asp:DropDownList>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4"><strong>Date: </strong></td>
-                    <td class="auto-style5">
-                        <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style5">&nbsp;</td>
-                    <td class="auto-style8">
-                        <asp:Button ID="btnSearch" runat="server" CssClass="auto-style7" OnClick="btnSearch_Click" Text="Search" Width="100px" />
-                    </td>
-                </tr>
-            </table>
-
+        
+        <div id="mainDiv">
+            <h1>Reports</h1>
+            <div>
+                <table class="auto-style1">
+                    <tr>
+                        <td class="auto-style9" colspan="5"><strong>Search for Report</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Report type:</strong></td>
+                        <td colspan="2">
+                            <asp:RadioButtonList ID="RadioButtonList1" runat="server">
+                                <asp:ListItem Selected="True">Production Daily Report</asp:ListItem>
+                                <asp:ListItem>Designer Daily Report</asp:ListItem>
+                            </asp:RadioButtonList>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Project:</strong></td>
+                        <td class="auto-style5">
+                            <asp:DropDownList ID="ddlProject" runat="server" Width="148px">
+                                <asp:ListItem Value="0">Select a project</asp:ListItem>
+                                <asp:ListItem>Project 1</asp:ListItem>
+                                <asp:ListItem>Project 2</asp:ListItem>
+                                <asp:ListItem>Project 3</asp:ListItem>
+                            </asp:DropDownList>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4"><strong>Date: </strong></td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
+                        </td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td class="auto-style4">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style5">&nbsp;</td>
+                        <td class="auto-style8">
+                            <asp:Button ID="btnSearch" runat="server" CssClass="button" OnClick="btnSearch_Click" Text="Search" Width="100px"/>
+                        </td>
+                    </tr>
+                </table>
+            </div>
         </div>
     </form>
 </body>
