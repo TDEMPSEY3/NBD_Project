@@ -5,6 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Reports</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function ()  
+        {  
+            $('#txtDatePicker').datepicker(  
+            {  
+                dateFormat: 'dd/mm/yy',  
+                changeMonth: true,  
+                changeYear: true,  
+                yearRange: '1950:2100'  
+            });  
+        })  
+    </script>  
     <style type="text/css">
         .auto-style1 {
             width: 756px;
@@ -152,7 +167,7 @@
                     <tr>
                         <td class="auto-style4"><strong>Date: </strong></td>
                         <td class="auto-style5">
-                            <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
+                            <asp:TextBox ID="txtDatePicker" runat="server" Width="139px"></asp:TextBox>
                         </td>
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>

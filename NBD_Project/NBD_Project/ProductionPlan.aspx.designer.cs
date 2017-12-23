@@ -175,13 +175,13 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
         
         /// <summary>
-        /// TextBox2 control.
+        /// txtProjDateBegin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox txtProjDateBegin;
         
         /// <summary>
         /// TextBox5 control.
@@ -193,13 +193,13 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.TextBox TextBox5;
         
         /// <summary>
-        /// TextBox3 control.
+        /// txtProjDateCompl control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox3;
+        protected global::System.Web.UI.WebControls.TextBox txtProjDateCompl;
         
         /// <summary>
         /// TextBox6 control.
