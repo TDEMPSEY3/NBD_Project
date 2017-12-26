@@ -128,7 +128,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style4">&nbsp;</td>
-                        <td class="auto-style3">&nbsp;</td>
+                        <td class="auto-style3">
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDatePicker" ErrorMessage="Date is required." ForeColor="Red"></asp:RequiredFieldValidator>
+                        </td>
                         <td class="auto-style6">
                             <asp:Button ID="btnCreate" runat="server" OnClick="btnCreate_Click" Text="Create" Width="165px" CssClass="button" />
                         </td>

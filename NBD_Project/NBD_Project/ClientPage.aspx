@@ -185,7 +185,11 @@
 
                 <table class="auto-style12">
                     <tr>
-                        <td class="auto-style23" colspan="5"><strong>Create New Client</strong></td>
+                        <td class="auto-style23" colspan="5"><strong>Create New Client<br />
+                            </strong>
+                            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
+                        </td><br />
+
                     </tr>
                     <tr>
                         <td class="auto-style17">&nbsp;</td>
@@ -198,6 +202,7 @@
                         <td class="auto-style21"><strong>Client Name:</strong></td>
                         <td colspan="2">
                             <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Client Name is Required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style18">&nbsp;</td>
@@ -213,10 +218,12 @@
                         <td class="auto-style21"><strong>Address:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Address is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style22"><strong>City:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="City is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                     </tr>
@@ -237,10 +244,12 @@
                                 <asp:ListItem>Manitoba</asp:ListItem>
                                 <asp:ListItem>etc...</asp:ListItem>
                             </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DropDownList1" ErrorMessage="Province is required." ForeColor="Red" InitialValue="0">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style22"><strong>Postal Code:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox4" ErrorMessage="Postal Code is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                     </tr>
@@ -255,6 +264,7 @@
                         <td class="auto-style21"><strong>Telephone Number:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox5" ErrorMessage="Telephone Number is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style18">&nbsp;</td>
