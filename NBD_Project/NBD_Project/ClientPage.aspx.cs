@@ -56,5 +56,10 @@ namespace NBD_Project
         {
             Response.Redirect("~/ClientPage.aspx");
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/DesignBidResult.aspx");
+        }
     }
 }

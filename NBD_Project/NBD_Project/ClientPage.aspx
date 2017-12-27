@@ -362,7 +362,7 @@
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style25">&nbsp;</td>
                         <td class="auto-style9">
-                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" CssClass="button" />
+                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" CssClass="button" OnClick="btnSearch_Click" />
                         </td>
                     </tr>
                 </table>
