@@ -196,28 +196,34 @@
                                     <td class="auto-style4">Project:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Project Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Project Site:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox4" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Project Site is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Begin Date:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="txtProjDateBegin" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProjDateBegin" ErrorMessage="Begin Date is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Bid Amount:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Bid Amount is required." ForeColor="Red">*</asp:RequiredFieldValidator>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Decimal only" ForeColor="Red" ValidationExpression="((\d+)+(\.\d+))$">*</asp:RegularExpressionValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Compl Date:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="txtProjDateCompl" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProjDateCompl" ErrorMessage="End Date is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">&nbsp;</td>
@@ -238,17 +244,20 @@
                                     <td class="auto-style4">Sales Associate:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox6" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="Sales Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Production:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox7" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox7" ErrorMessage="Production is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Designer</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox8" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8" ErrorMessage="Designer Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                 </tr>

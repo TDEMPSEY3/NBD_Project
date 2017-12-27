@@ -151,7 +151,8 @@
                                 <asp:ListItem>Project 1</asp:ListItem>
                                 <asp:ListItem>Project 2</asp:ListItem>
                                 <asp:ListItem>Project 3</asp:ListItem>
-                            </asp:DropDownList>
+                            </asp:DropDownList><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please select a Project." ControlToValidate="ddlProject" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>
@@ -167,7 +168,8 @@
                     <tr>
                         <td class="auto-style4"><strong>Date: </strong></td>
                         <td class="auto-style5">
-                            <asp:TextBox ID="txtDatePicker" runat="server" Width="139px"></asp:TextBox>
+                            <asp:TextBox ID="txtDatePicker" runat="server" Width="139px"></asp:TextBox><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please select a Date." ControlToValidate="txtDatePicker" ForeColor="Red"></asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>

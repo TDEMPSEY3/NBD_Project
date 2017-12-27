@@ -27,7 +27,7 @@
             text-align: right;
         }
         .auto-style51 {
-            text-align: center;
+            text-align: left;
             font-size: xx-large;
         }
         .auto-style52 {
@@ -120,7 +120,9 @@
                     </tr>
                     <tr>
                         <td class="auto-style37">&nbsp;</td>
-                        <td class="auto-style47">&nbsp;</td>
+                        <td class="auto-style47">
+                            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
+                        </td>
                         <td class="auto-style39">&nbsp;</td>
                         <td class="auto-style42">&nbsp;</td>
                         <td class="auto-style10">&nbsp;</td>
@@ -131,6 +133,7 @@
                         </td>
                         <td class="auto-style47">
                             <asp:TextBox ID="txtDatePicker" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtDatePicker" ErrorMessage="Date is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style39"></td>
                         <td class="auto-style42"></td>
@@ -158,15 +161,19 @@
                             &nbsp;</td>
                         <td class="auto-style47">
                             <asp:TextBox ID="txtProject" runat="server" Width="260px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProject" ErrorMessage="Project Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style39">
                             <asp:TextBox ID="txtStage" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtStage" ErrorMessage="Stage is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style42">
                             <asp:TextBox ID="txtHours" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txtHours" ErrorMessage="Hours is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style10">
                             <asp:TextBox ID="txtTask" runat="server" Width="437px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txtTask" ErrorMessage="Task is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style10">
                             <asp:Button ID="btnAdd" runat="server" Text="Add" CssClass="addbutton"/>
