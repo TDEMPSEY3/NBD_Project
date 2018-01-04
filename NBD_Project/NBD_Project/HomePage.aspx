@@ -88,9 +88,10 @@
                 </em></strong><br />Client #2356 has requested a meeting for rescheduling and readjusting for project #456987<br />
                 <br />
                 Please be sure to contribute to Hunger Awareness by donating non-perishable goods. Let&#39;s save lives together as NBD<br />
-                <br />Due to a mishap in the greenhouse, there are a few flowers and shrubs that will not be available until next month. <asp:HyperLink ID="HyperLink1" runat="server" href="">Click here</asp:HyperLink>&nbsp; to view the affected plants. Regards, Ben.<br /><br />
+                <br />Due to a mishap in the greenhouse, there are a few flowers and shrubs that will not be available until next month. <asp:HyperLink ID="HyperLink1" runat="server" href="">Click here</asp:HyperLink>&nbsp; to view the affected plants. Regards, Ben.<br />
             
-            </div><br /><br />
+            </div>
+            <br />
             <div style="height: 153px">
                     <strong><em>Current Projects
             </em>
@@ -104,6 +105,8 @@
                     <br />
                     Project #456873&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <em>Initializing </em>
             </div>
+            
+            <br />
             
             <br /><br />
             

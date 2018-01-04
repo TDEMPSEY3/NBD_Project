@@ -314,20 +314,20 @@
                     </tr>
                     <tr>
                         <td class="auto-style4"><strong>Bid:</strong></td>
-                        <td class="auto-style8">
-                <asp:DropDownList ID="ddlBid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlBid_SelectedIndexChanged" Width="100px">
-                    <asp:ListItem>&gt;</asp:ListItem>
-                    <asp:ListItem>&lt;</asp:ListItem>
+                        <td class="auto-style5">
+                <asp:DropDownList ID="ddlBid" runat="server" AutoPostBack="True" OnSelectedIndexChanged="ddlBid_SelectedIndexChanged" Width="150px">
+                    <asp:ListItem Selected="True">Greater than</asp:ListItem>
+                    <asp:ListItem>Less than</asp:ListItem>
                     <asp:ListItem>Between</asp:ListItem>
                 </asp:DropDownList>
                         </td>
                         <td class="auto-style5">
-                <asp:TextBox ID="txtBid1" runat="server">$</asp:TextBox>
+                <asp:TextBox ID="txtBid1" runat="server"></asp:TextBox>
                         </td>
                         <td class="auto-style24">
                 <asp:Label ID="lblAnd" runat="server" Text="and" Visible="False"></asp:Label>
                             &nbsp;
-                <asp:TextBox ID="txtBid2" runat="server" Visible="False">$</asp:TextBox>
+                <asp:TextBox ID="txtBid2" runat="server" Visible="False"></asp:TextBox>
                         </td>
                         <td class="auto-style7">&nbsp;</td>
                     </tr>
