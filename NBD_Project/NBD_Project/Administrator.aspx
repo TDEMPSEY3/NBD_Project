@@ -64,7 +64,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>
@@ -75,30 +75,30 @@
         <div id="mainDiv">
             <h1>Administrator</h1>
             <div style="height: 114px; margin-top: 0px;"><strong><em>Pending Approvals</em></strong><br />
-                <asp:LinkButton ID="LinkButton1" runat="server">View</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" CssClass="link">View</asp:LinkButton>
                     &nbsp;&nbsp; Design Bid #4256789<br />
                 <br />
-                <asp:LinkButton ID="LinkButton2" runat="server">View</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton2" runat="server" CssClass="link">View</asp:LinkButton>
                     &nbsp;&nbsp; Design Budget #5679834<br />
                 <br />
-                <asp:LinkButton ID="LinkButton3" runat="server">View</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton3" runat="server" CssClass="link">View</asp:LinkButton>
                     &nbsp;&nbsp; Design Budget #674356</div><br />
             <div>
                 <asp:Label ID="Label2" runat="server" style="font-weight: 700; font-style: italic" Text="Team Assembly"></asp:Label>
                 <br />
-                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Click Here</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click" CssClass="link">Click Here</asp:LinkButton>
                     &nbsp;<asp:Label ID="Label1" runat="server" Text="to assemble a team"></asp:Label>
             </div><br />
             <div>
                 <asp:Label ID="Label3" runat="server" style="font-weight: 700; font-style: italic" Text="Project Administrator Report"></asp:Label>
                 <br />
-                <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Click Here</asp:LinkButton>
+                <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click" CssClass="link">Click Here</asp:LinkButton>
                     &nbsp;<asp:Label ID="Label4" runat="server" Text="to create/edit a report"></asp:Label>
             </div><br />
             <div>
                 <asp:Label ID="Label5" runat="server" Text="Production Plan" style="font-weight: 700; font-style: italic"></asp:Label>
                 <br />
-                 <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Click Here</asp:LinkButton>
+                 <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click" CssClass="link">Click Here</asp:LinkButton>
                     &nbsp;<asp:Label ID="Label6" runat="server" Text="to create/edit a plan"></asp:Label>
             </div>
         </div>

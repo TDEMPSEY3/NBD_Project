@@ -46,9 +46,9 @@
 <body>
     <form id="form1" runat="server">
           <div id="NavMenu">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link" Font-Size="20px">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link" Font-Size="20px">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
                 <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
@@ -63,7 +63,7 @@
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link" Font-Size="20px">Report</asp:HyperLink>
             </p>
            
             <div style="margin-left: 40px">
@@ -80,7 +80,7 @@
             </div>
 
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link" Font-Size="20px">Administrator</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx" CssClass="link">Pending Approvals</asp:HyperLink>
@@ -102,7 +102,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>    
@@ -110,7 +110,7 @@
         </div>
         
         <div id="mainDiv">
-            <h1>Procduction Daily Work Report</h1>
+            <h1>Production Daily Work Report</h1>
             <div style="height: 544px" class="auto-style11">
                 <div class="auto-style12">
                     <strong>Production Daily Report<br />

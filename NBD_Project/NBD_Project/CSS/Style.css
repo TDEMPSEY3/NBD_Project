@@ -2,7 +2,8 @@
     font-family: 'Raleway', sans-serif;
     font-size: medium;
     color: #266F26;
-    background: #DEB887;
+    background: #D5B77A;
+    padding: 0px;
 }
 
 
@@ -16,12 +17,21 @@ h1 {
 #NavMenu {
     float: left;
     width: 15%;
-    padding: 5px;
-    background-color: #266F26;
-    font-weight:bold;
+    border-right: 1px solid #266F26;
+    height: 100%;
+    background-color: #859C27;
 }
 
+.link {
+    text-decoration: none;
+    color: #266F26;
+    cursor: pointer;
+}
 
+ .link:hover
+    {
+        color: #32CD32;
+    }
  
 
 #welcome 
@@ -77,19 +87,4 @@ h1 {
     background: #00DE00;
     
 }
-
-.link {
-    color: #DEB887;
-    text-decoration: none;
-}
-
-    .link:hover {
-        cursor: grabbing;
-    }
-
-    .link:visited {
-        color: #A0522D;
- }
-
-
 
