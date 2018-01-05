@@ -28,5 +28,10 @@ namespace NBD_Project
             authenticationManager.SignOut();
             Response.Redirect("~/Login.aspx");
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("~/Login.aspx");
+        }
     }
 }

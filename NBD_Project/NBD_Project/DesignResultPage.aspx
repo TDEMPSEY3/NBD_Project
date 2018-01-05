@@ -66,7 +66,7 @@
         }
         .auto-style16 {
             text-decoration: underline;
-            font-family: "Lucida Handwriting";
+            
         }
         .auto-style17 {
             text-align: center;
@@ -106,9 +106,9 @@
     <form id="form1" runat="server">
           <div class="auto-style3">
           <div id="NavMenu" class="auto-style23">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link" Font-Size="20px">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link" Font-Size="20px">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
                 <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
@@ -123,7 +123,7 @@
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link" Font-Size="20px">Report</asp:HyperLink>
             </p>
            
             <div style="margin-left: 40px">
@@ -139,7 +139,7 @@
                     </p>
             </div>
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link" Font-Size="20px">Administrator</asp:HyperLink>
             </p>
               <a href="DesignResultPage.aspx">DesignResultPage.aspx</a>
             <div style="margin-left: 40px">
@@ -162,7 +162,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>
