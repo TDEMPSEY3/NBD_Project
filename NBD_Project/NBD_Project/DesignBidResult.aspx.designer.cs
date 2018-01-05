@@ -157,121 +157,85 @@ namespace NBD_Project {
         protected global::System.Web.UI.WebControls.LinkButton lnkLogout;
         
         /// <summary>
-        /// lblClientName control.
+        /// search control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblClientName;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl search;
         
         /// <summary>
-        /// lblContactName control.
+        /// lblClients control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblContactName;
+        protected global::System.Web.UI.WebControls.Label lblClients;
         
         /// <summary>
-        /// lblClientAddress control.
+        /// ddlClients control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblClientAddress;
+        protected global::System.Web.UI.WebControls.DropDownList ddlClients;
         
         /// <summary>
-        /// lblClientPhone control.
+        /// btnClient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblClientPhone;
+        protected global::System.Web.UI.WebControls.Button btnClient;
         
         /// <summary>
-        /// lblSalesAsoc control.
+        /// dsClient control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSalesAsoc;
+        protected global::System.Web.UI.WebControls.ObjectDataSource dsClient;
         
         /// <summary>
-        /// lblSalesPhone control.
+        /// lblDesignBids control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblSalesPhone;
+        protected global::System.Web.UI.WebControls.Label lblDesignBids;
         
         /// <summary>
-        /// lblDesigner control.
+        /// lbBids control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDesigner;
+        protected global::System.Web.UI.WebControls.ListBox lbBids;
         
         /// <summary>
-        /// lblDesignePhone control.
+        /// btnSelect control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblDesignePhone;
+        protected global::System.Web.UI.WebControls.Button btnSelect;
         
         /// <summary>
-        /// lblBidDate control.
+        /// mainDiv control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBidDate;
-        
-        /// <summary>
-        /// lblProjectSite control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblProjectSite;
-        
-        /// <summary>
-        /// lblBeginDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBeginDate;
-        
-        /// <summary>
-        /// lblBid control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblBid;
-        
-        /// <summary>
-        /// lblComplDate control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblComplDate;
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl mainDiv;
         
         /// <summary>
         /// GridView1 control.

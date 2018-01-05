@@ -497,6 +497,8 @@ namespace NBDdatabase {
             
             private global::System.Data.DataColumn columncliContact;
             
+            private global::System.Data.DataColumn columnID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public CLIENTDataTable() {
@@ -564,6 +566,14 @@ namespace NBDdatabase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -605,10 +615,18 @@ namespace NBDdatabase {
                         cliName,
                         cliPhone,
                         clientAdd,
-                        cliContact};
+                        cliContact,
+                        null};
                 rowCLIENTRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowCLIENTRow);
                 return rowCLIENTRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public CLIENTRow FindByID(int ID) {
+                return ((CLIENTRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -632,6 +650,7 @@ namespace NBDdatabase {
                 this.columncliPhone = base.Columns["cliPhone"];
                 this.columnclientAdd = base.Columns["clientAdd"];
                 this.columncliContact = base.Columns["cliContact"];
+                this.columnID = base.Columns["ID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -645,6 +664,10 @@ namespace NBDdatabase {
                 base.Columns.Add(this.columnclientAdd);
                 this.columncliContact = new global::System.Data.DataColumn("cliContact", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columncliContact);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
                 this.columncliName.AllowDBNull = false;
                 this.columncliName.MaxLength = 80;
                 this.columncliPhone.AllowDBNull = false;
@@ -653,6 +676,12 @@ namespace NBDdatabase {
                 this.columnclientAdd.MaxLength = 57;
                 this.columncliContact.ReadOnly = true;
                 this.columncliContact.MaxLength = 93;
+                this.columnID.AutoIncrement = true;
+                this.columnID.AutoIncrementSeed = -1;
+                this.columnID.AutoIncrementStep = -1;
+                this.columnID.AllowDBNull = false;
+                this.columnID.ReadOnly = true;
+                this.columnID.Unique = true;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1086,6 +1115,10 @@ namespace NBDdatabase {
             
             private global::System.Data.DataColumn columnprojEstCost;
             
+            private global::System.Data.DataColumn columnID;
+            
+            private global::System.Data.DataColumn columnclientID;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public PROJECTDataTable() {
@@ -1161,6 +1194,22 @@ namespace NBDdatabase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn IDColumn {
+                get {
+                    return this.columnID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn clientIDColumn {
+                get {
+                    return this.columnclientID;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -1196,17 +1245,26 @@ namespace NBDdatabase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public PROJECTRow AddPROJECTRow(string projSite, System.DateTime projBidDate, string projEstStart, string projEstEnd, string projEstCost) {
+            public PROJECTRow AddPROJECTRow(string projSite, System.DateTime projBidDate, string projEstStart, string projEstEnd, string projEstCost, int ID, int clientID) {
                 PROJECTRow rowPROJECTRow = ((PROJECTRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         projSite,
                         projBidDate,
                         projEstStart,
                         projEstEnd,
-                        projEstCost};
+                        projEstCost,
+                        ID,
+                        clientID};
                 rowPROJECTRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPROJECTRow);
                 return rowPROJECTRow;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public PROJECTRow FindByID(int ID) {
+                return ((PROJECTRow)(this.Rows.Find(new object[] {
+                            ID})));
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1231,6 +1289,8 @@ namespace NBDdatabase {
                 this.columnprojEstStart = base.Columns["projEstStart"];
                 this.columnprojEstEnd = base.Columns["projEstEnd"];
                 this.columnprojEstCost = base.Columns["projEstCost"];
+                this.columnID = base.Columns["ID"];
+                this.columnclientID = base.Columns["clientID"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1246,12 +1306,21 @@ namespace NBDdatabase {
                 base.Columns.Add(this.columnprojEstEnd);
                 this.columnprojEstCost = new global::System.Data.DataColumn("projEstCost", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnprojEstCost);
+                this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnID);
+                this.columnclientID = new global::System.Data.DataColumn("clientID", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnclientID);
+                this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
+                                this.columnID}, true));
                 this.columnprojSite.AllowDBNull = false;
                 this.columnprojSite.MaxLength = 100;
                 this.columnprojBidDate.AllowDBNull = false;
                 this.columnprojEstStart.MaxLength = 10;
                 this.columnprojEstEnd.MaxLength = 10;
                 this.columnprojEstCost.MaxLength = 10;
+                this.columnID.AllowDBNull = false;
+                this.columnID.Unique = true;
+                this.columnclientID.AllowDBNull = false;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2665,6 +2734,17 @@ namespace NBDdatabase {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int ID {
+                get {
+                    return ((int)(this[this.tableCLIENT.IDColumn]));
+                }
+                set {
+                    this[this.tableCLIENT.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public bool IsclientAddNull() {
                 return this.IsNull(this.tableCLIENT.clientAddColumn);
             }
@@ -2834,6 +2914,28 @@ namespace NBDdatabase {
                 }
                 set {
                     this[this.tablePROJECT.projEstCostColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int ID {
+                get {
+                    return ((int)(this[this.tablePROJECT.IDColumn]));
+                }
+                set {
+                    this[this.tablePROJECT.IDColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int clientID {
+                get {
+                    return ((int)(this[this.tablePROJECT.clientIDColumn]));
+                }
+                set {
+                    this[this.tablePROJECT.clientIDColumn] = value;
                 }
             }
             
@@ -3646,6 +3748,7 @@ namespace NBDdatabase.NBD_SBDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("cliPhone", "cliPhone");
             tableMapping.ColumnMappings.Add("clientAdd", "clientAdd");
             tableMapping.ColumnMappings.Add("cliContact", "cliContact");
+            tableMapping.ColumnMappings.Add("ID", "ID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -3662,9 +3765,9 @@ namespace NBDdatabase.NBD_SBDataSetTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT cliName, cliAddress + \' \' + cliPCode AS clientAdd, cliPhone, cliConFName +" +
-                " \' \' + cliConLName + \', \' + cliConPosition AS cliContact\r\nFROM     CLIENT\r\nORDER" +
-                " BY cliName";
+            this._commandCollection[0].CommandText = "SELECT        cliName, cliAddress + \' \' + cliPCode AS clientAdd, cliPhone, cliCon" +
+                "FName + \' \' + cliConLName + \', \' + cliConPosition AS cliContact, ID\r\nFROM       " +
+                "     CLIENT\r\nORDER BY cliName";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -3992,6 +4095,8 @@ ORDER BY workerFull";
             tableMapping.ColumnMappings.Add("projEstStart", "projEstStart");
             tableMapping.ColumnMappings.Add("projEstEnd", "projEstEnd");
             tableMapping.ColumnMappings.Add("projEstCost", "projEstCost");
+            tableMapping.ColumnMappings.Add("ID", "ID");
+            tableMapping.ColumnMappings.Add("clientID", "clientID");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -4008,8 +4113,8 @@ ORDER BY workerFull";
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT projSite, projBidDate, projEstStart, projEstEnd, projEstCost\r\nFROM     PRO" +
-                "JECT";
+            this._commandCollection[0].CommandText = "SELECT        projSite, projBidDate, projEstStart, projEstEnd, projEstCost, ID, c" +
+                "lientID\r\nFROM            PROJECT";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

@@ -23,6 +23,10 @@
                 font-size: large;
             }
 
+        .auto-style16 {
+            width: 170px;
+        }
+
     </style>
     <link rel="stylesheet" runat="server" media="screen" href="~/CSS/style.css" />
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Raleway:300,400" rel="stylesheet"/>
@@ -91,31 +95,43 @@
     
             <br />
         </div>
-        
-        <div id="mainDiv">
+        <br />
+        <div id="search" runat="server">
+            <asp:Label ID="lblClients" runat="server" Text="Clients: "></asp:Label>
+            <asp:DropDownList ID="ddlClients" runat="server" AppendDataBoundItems="True">
+                <asp:ListItem Selected="True" Value="-1">Select a client</asp:ListItem>
+            </asp:DropDownList>
+            <asp:Button ID="btnClient" runat="server" Text="Select" OnClick="btnClient_Click" />
+            <asp:ObjectDataSource ID="dsClient" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetData" TypeName="NBDdatabase.NBD_SBDataSetTableAdapters.CLIENTTableAdapter"></asp:ObjectDataSource>
+            <br />
+            <br />
+            <asp:Label ID="lblDesignBids" runat="server" Text="Design Bids:"></asp:Label>
+            <br />
+            <asp:ListBox ID="lbBids" runat="server" Height="99px" Width="192px"></asp:ListBox>
+            <br />
+            <asp:Button ID="btnSelect" runat="server" Text="Select" OnClick="btnSelect_Click" />
+        </div>
+        <div id="mainDiv" runat="server">
             <table class="auto-style1">
                     <tr>
                         <td class="auto-style14" colspan="4"><strong>Client</strong></td>
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Client Name:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblClientName" runat="server" Text="Client Name"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            London Sq. Mall</td>
                         <td class="auto-style3"><strong>Contact:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblContactName" runat="server" Text="Contact Name"></asp:Label>
-                        </td>
+                            Amy Benson Mgr.</td>
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Client Address:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblClientAddress" runat="server" Text="Client Address"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            12638 Mall Drive<br />
+                            Scotts Valley, CA 95060</td>
                         <td class="auto-style3"><strong>Phone:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblClientPhone" runat="server" Text="Client Phone #"></asp:Label>
-                        </td>
+                            (408)834-5603</td>
                     </tr>
                     <tr>
                         <td colspan="4">&nbsp;</td>
@@ -125,23 +141,19 @@
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Sales Asoc:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblSalesAsoc" runat="server" Text="Sales Ascociate"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            Bob Reinhardt</td>
                         <td class="auto-style3"><strong>Phone:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblSalesPhone" runat="server" Text="Sales Phone #"></asp:Label>
-                        </td>
+                            (408)7753652</td>
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Designer:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblDesigner" runat="server" Text="Designer"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            Tamara Bakken</td>
                         <td class="auto-style3"><strong>Phone:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblDesignePhone" runat="server" Text="Designer Phone #"></asp:Label>
-                        </td>
+                            408)7753645</td>
                     </tr>
                     <tr>
                         <td colspan="4">&nbsp;</td>
@@ -151,29 +163,25 @@
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Bid Date:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblBidDate" runat="server" Text="Bid Date"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            May 6, 1996</td>
                         <td class="auto-style3"><strong>Project Site:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblProjectSite" runat="server" Text="Site Address"></asp:Label>
-                        </td>
+                            Main entrance<br />
+                            Mall Dr/Cinama Lane</td>
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Est. Begin Date:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblBeginDate" runat="server" Text="Begin Date"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            June 15, 1996</td>
                         <td class="auto-style3"><strong>Bid Amount:</strong></td>
                         <td class="auto-style3">
-                            <asp:Label ID="lblBid" runat="server" Text="Bid Amount"></asp:Label>
-                        </td>
+                            $7,651.50</td>
                     </tr>
                     <tr>
                         <td class="auto-style13"><strong>Est. Compl. Date:</strong></td>
-                        <td class="auto-style3">
-                            <asp:Label ID="lblComplDate" runat="server" Text="Compl. Date"></asp:Label>
-                        </td>
+                        <td class="auto-style16">
+                            June 30, 1996</td>
                         <td class="auto-style3">&nbsp;</td>
                         <td class="auto-style3">&nbsp;</td>
                     </tr>
