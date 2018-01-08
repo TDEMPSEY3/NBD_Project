@@ -5,6 +5,21 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Reports</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function ()  
+        {  
+            $('#txtDatePicker').datepicker(  
+            {  
+                dateFormat: 'dd/mm/yy',  
+                changeMonth: true,  
+                changeYear: true,  
+                yearRange: '1950:2100'  
+            });  
+        })  
+    </script>  
     <style type="text/css">
         .auto-style1 {
             width: 756px;
@@ -33,9 +48,9 @@
 <body>
     <form id="form1" runat="server">
         <div id="NavMenu">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link" Font-Size="20px">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link" Font-Size="20px">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
                 <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
@@ -50,7 +65,7 @@
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link" Font-Size="20px">Report</asp:HyperLink>
             </p>
            
             <div style="margin-left: 40px">
@@ -67,7 +82,7 @@
             </div>
 
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link" Font-Size="20px">Administrator</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx" CssClass="link">Pending Approvals</asp:HyperLink>
@@ -89,7 +104,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>    
@@ -136,7 +151,8 @@
                                 <asp:ListItem>Project 1</asp:ListItem>
                                 <asp:ListItem>Project 2</asp:ListItem>
                                 <asp:ListItem>Project 3</asp:ListItem>
-                            </asp:DropDownList>
+                            </asp:DropDownList><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please select a Project." ControlToValidate="ddlProject" ForeColor="Red" InitialValue="0"></asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>
@@ -152,7 +168,8 @@
                     <tr>
                         <td class="auto-style4"><strong>Date: </strong></td>
                         <td class="auto-style5">
-                            <asp:TextBox ID="txtDate" runat="server" Width="139px"></asp:TextBox>
+                            <asp:TextBox ID="txtDatePicker" runat="server" Width="139px"></asp:TextBox><br />
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Please select a Date." ControlToValidate="txtDatePicker" ForeColor="Red"></asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style5">&nbsp;</td>

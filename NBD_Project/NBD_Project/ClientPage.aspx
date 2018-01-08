@@ -5,6 +5,30 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Client</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function ()  
+        {  
+            $('#txtDateStart').datepicker(  
+            {  
+                dateFormat: 'dd/mm/yy',  
+                changeMonth: true,  
+                changeYear: true,  
+                yearRange: '1950:2100'  
+            });  
+        })  
+        $(function () {
+            $('#txtDateEnd').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+    </script>  
     <style type="text/css">
         .auto-style1 {
             width: 756px;
@@ -80,9 +104,9 @@
 <body style="height: 200px">
     <form id="form1" runat="server">
       <div id="NavMenu">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link" Font-Size="20px">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link" Font-Size="20px">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
                 <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
@@ -97,7 +121,7 @@
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link" Font-Size="20px">Report</asp:HyperLink>
             </p>
            
             <div style="margin-left: 40px">
@@ -114,7 +138,7 @@
             </div>
 
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link" Font-Size="20px">Administrator</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx" CssClass="link">Pending Approvals</asp:HyperLink>
@@ -136,7 +160,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>    
@@ -161,7 +185,11 @@
 
                 <table class="auto-style12">
                     <tr>
-                        <td class="auto-style23" colspan="5"><strong>Create New Client</strong></td>
+                        <td class="auto-style23" colspan="5"><strong>Create New Client<br />
+                            </strong>
+                            <asp:ValidationSummary ID="ValidationSummary1" runat="server" ForeColor="Red" />
+                        </td><br />
+
                     </tr>
                     <tr>
                         <td class="auto-style17">&nbsp;</td>
@@ -174,6 +202,7 @@
                         <td class="auto-style21"><strong>Client Name:</strong></td>
                         <td colspan="2">
                             <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Client Name is Required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style18">&nbsp;</td>
@@ -189,10 +218,12 @@
                         <td class="auto-style21"><strong>Address:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TextBox2" ErrorMessage="Address is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style22"><strong>City:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox3" ErrorMessage="City is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                     </tr>
@@ -213,10 +244,12 @@
                                 <asp:ListItem>Manitoba</asp:ListItem>
                                 <asp:ListItem>etc...</asp:ListItem>
                             </asp:DropDownList>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="DropDownList1" ErrorMessage="Province is required." ForeColor="Red" InitialValue="0">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style22"><strong>Postal Code:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox4" ErrorMessage="Postal Code is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                     </tr>
@@ -231,6 +264,7 @@
                         <td class="auto-style21"><strong>Telephone Number:</strong></td>
                         <td class="auto-style18">
                             <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox5" ErrorMessage="Telephone Number is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                         </td>
                         <td class="auto-style18">&nbsp;</td>
                         <td class="auto-style18">&nbsp;</td>
@@ -328,12 +362,14 @@
                         <td class="auto-style5">&nbsp;</td>
                         <td class="auto-style25">&nbsp;</td>
                         <td class="auto-style9">
-                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" CssClass="button" />
+                <asp:Button ID="btnSearch" runat="server" Text="Search" Width="100px" CssClass="button" OnClick="btnSearch_Click" />
                         </td>
                     </tr>
                 </table>
                 <br />
                 <br />
+               
+                <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
                
             </div>
         </div>

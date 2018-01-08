@@ -5,6 +5,29 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Create Production Plan</title>
+    <link href="Styles/jquery-ui.css" rel="stylesheet" />  
+    <script src="Scripts/jquery-3.2.1.min.js"></script>  
+    <script src="Scripts/jquery-ui.js"></script>
+    <script>  
+        $(function () {
+            $('#txtProjDateBegin').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+        $(function () {
+            $('#txtProjDateCompl').datepicker(
+                {
+                    dateFormat: 'dd/mm/yy',
+                    changeMonth: true,
+                    changeYear: true,
+                    yearRange: '1950:2100'
+                });
+        })  
+    </script>  
         <style type="text/css">
             .auto-style2 {
                 width: 100%;
@@ -98,9 +121,9 @@
 <body>
     <form id="form1" runat="server" class="auto-style25">
        <div id="NavMenu" class="auto-style25">
-            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link">Home</asp:HyperLink>
+            <asp:HyperLink ID="HomeLink" runat="server" href="HomePage.aspx" CssClass="link" Font-Size="20px">Home</asp:HyperLink>
             <p>
-                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link">Client</asp:HyperLink>
+                <asp:HyperLink ID="ClientLink" runat="server" href="ClientPage.aspx" CssClass="link" Font-Size="20px">Client</asp:HyperLink>
             </p>
             <p style="margin-left: 40px">
                 <asp:HyperLink ID="ClientInfoLink" runat="server" href="ClientInfo.aspx" CssClass="link">Client Information</asp:HyperLink>
@@ -115,7 +138,7 @@
                 <asp:HyperLink ID="PPlanLink" runat="server" href="ProductionPlan.aspx" CssClass="link">Production Plan</asp:HyperLink>
             </div>
             <p>            
-                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link">Report</asp:HyperLink>
+                <asp:HyperLink ID="ReportLink" runat="server" href="ReportPage.aspx" CssClass="link" Font-Size="20px">Report</asp:HyperLink>
             </p>
            <div style="margin-left: 40px">
                 <p>
@@ -131,7 +154,7 @@
             </div>
 
             <p>
-                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link">Administrator</asp:HyperLink>
+                <asp:HyperLink ID="AdminLink" runat="server" href="Administrator.aspx" CssClass="link" Font-Size="20px">Administrator</asp:HyperLink>
             </p>
             <div style="margin-left: 40px">
                 <asp:HyperLink ID="PApprovalsLink" runat="server" href="PendingApprovals.aspx" CssClass="link">Pending Approvals</asp:HyperLink>
@@ -153,7 +176,7 @@
                     <td style="text-align: right">
                         <asp:Label ID="lblWelcome" runat="server" Text="Welcome" style="font-weight: 700; font-style: italic"></asp:Label>
                         <br />
-                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click">Logout</asp:LinkButton>
+                        <asp:LinkButton ID="lnkLogout" runat="server" Visible="True" OnClick="lnkLogout_Click" CssClass="link">Logout</asp:LinkButton>
                     </td>
                 </tr>
             </table>    
@@ -173,28 +196,34 @@
                                     <td class="auto-style4">Project:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox1" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Project Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Project Site:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox4" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox4" ErrorMessage="Project Site is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Begin Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox2" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateBegin" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtProjDateBegin" ErrorMessage="Begin Date is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Bid Amount:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox5" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Bid Amount is required." ForeColor="Red">*</asp:RequiredFieldValidator>
+                                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox5" Display="Dynamic" ErrorMessage="Decimal only" ForeColor="Red" ValidationExpression="((\d+)+(\.\d+))$">*</asp:RegularExpressionValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Compl Date:</td>
                                     <td class="auto-style5">
-                                        <asp:TextBox ID="TextBox3" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:TextBox ID="txtProjDateCompl" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="txtProjDateCompl" ErrorMessage="End Date is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">&nbsp;</td>
@@ -215,17 +244,20 @@
                                     <td class="auto-style4">Sales Associate:</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox6" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox6" ErrorMessage="Sales Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                     <td class="auto-style4">Production:</td>
                                     <td>
                                         <asp:TextBox ID="TextBox7" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TextBox7" ErrorMessage="Production is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="auto-style4">Designer</td>
                                     <td class="auto-style5">
                                         <asp:TextBox ID="TextBox8" runat="server" Width="200px"></asp:TextBox>
+                                        <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TextBox8" ErrorMessage="Designer Name is required." ForeColor="Red">*</asp:RequiredFieldValidator>
                                     </td>
                                     <td class="auto-style6">&nbsp;</td>
                                 </tr>
